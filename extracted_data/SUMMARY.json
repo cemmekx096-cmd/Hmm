@@ -1,0 +1,17 @@
+{
+  "extraction_date": "$(date)",
+  "files": {
+    "seeds": {
+      "count": 41,
+      "file": "seeds.json"
+    },
+    "animals": {
+      "count": 21,
+      "file": "animals.json"
+    },
+    "items": {
+      "count": 0,
+      "file": "items.json"
+    }
+  }
+}
