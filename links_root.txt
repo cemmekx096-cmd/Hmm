@@ -1,0 +1,14 @@
+=== FILES IN ROOT ===
+
+1. .gitignore
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/.gitignore
+
+2. generate-links.py
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/generate-links.py
+
+3. 3+4comand.txt
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/3+4comand.txt
+
+4. generate-structure.py
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/generate-structure.py
+

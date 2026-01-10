@@ -1,0 +1,38 @@
+=== FOLDER: newgame ===
+
+5. NewGameCitizenAge.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/newgame/NewGameCitizenAge.xml
+
+6. NewGameCitizenState.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/newgame/NewGameCitizenState.xml
+
+7. NewGameEventTrigger.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/newgame/NewGameEventTrigger.xml
+
+8. NewGameDisasterSetting.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/newgame/NewGameDisasterSetting.xml
+
+9. NewGameInitAnimal.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/newgame/NewGameInitAnimal.xml
+
+10. NewGameInitBuildingSetting.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/newgame/NewGameInitBuildingSetting.xml
+
+11. NewGameInitCitizen.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/newgame/NewGameInitCitizen.xml
+
+12. NewGameInitSeed.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/newgame/NewGameInitSeed.xml
+
+13. NewGameMapResource.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/newgame/NewGameMapResource.xml
+
+14. NewGameOther.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/newgame/NewGameOther.xml
+
+15. NewGameTechPoint.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/newgame/NewGameTechPoint.xml
+
+16. NewGameTemperature.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/newgame/NewGameTemperature.xml
+

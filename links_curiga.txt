@@ -1,0 +1,17 @@
+=== FOLDER: curiga ===
+
+17. NewGameMapAnimNumItem.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/curiga/NewGameMapAnimNumItem.xml
+
+18. NewGameMapHillNumItem.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/curiga/NewGameMapHillNumItem.xml
+
+19. Race.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/curiga/Race.xml
+
+20. Season.xml
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/curiga/Season.xml
+
+21. 
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/3+4comand.txt
+
