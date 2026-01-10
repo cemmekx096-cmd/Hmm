@@ -1,6 +1,0 @@
-Protection Library Check:
-========================
-
-✗ libHMZ.so NOT found in original
-
-⚠ libHMZ.so STILL EXISTS in modded (unexpected!)

@@ -1,9 +1,0 @@
-package com.appsflyer.internal;
-
-/* loaded from: /data/data/com.termux/files/home/mod/ori/classes4.dex */
-public enum AFh1xSDK {
-    onReceive,
-    logSession,
-    logEvent,
-    setCustomerIdAndLogSession
-}
