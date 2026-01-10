@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<ArrayOfGameModeTemperatureSet xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--温度选项配置说明
+GameModeTemperatureSet 单个选项配置内容
+  ID 选项id，唯一
+  IconName 选项文字描述
+  Score 该选项的难度分数
+  TemperatureIndex 该难度下的温度选择（TemperatureChange表中的ID）  Temperature selection under this difficulty (ID in TemperatureChange table)
+  -->
+
+<!--使用的温度曲线id-->
+
+  <GameModeTemperatureSet>
+    <!--选项id，唯一-->
+    <ID>1</ID>
+    <!--温暖-->
+    <!--选项文字描述-->
+    <IconName>NewGame_Temperature_1</IconName>
+    <!--难度评分-->
+    <Score>50</Score>
+    <!--该难度下的温度选择（TemperatureChange表中的ID）  Temperature selection under this difficulty (ID in TemperatureChange table)-->
+    <TemperatureIndex>1</TemperatureIndex>
+  </GameModeTemperatureSet>
+  
+  <GameModeTemperatureSet>
+    <ID>2</ID>
+    <!--标准-->
+    <IconName>NewGame_Temperature_2</IconName>
+    <Score>200</Score>
+    <TemperatureIndex>2</TemperatureIndex>
+  </GameModeTemperatureSet>
+  
+  <GameModeTemperatureSet>
+    <ID>3</ID>
+    <!--寒冷-->
+    <IconName>NewGame_Temperature_3</IconName>
+    <Score>400</Score>
+    <TemperatureIndex>3</TemperatureIndex>
+  </GameModeTemperatureSet>
+  
+  <GameModeTemperatureSet>
+    <ID>4</ID>
+    <!--严寒-->
+    <IconName>NewGame_Temperature_4</IconName>
+    <Score>500</Score>
+    <TemperatureIndex>3</TemperatureIndex>
+  </GameModeTemperatureSet>
+  
+  <GameModeTemperatureSet>
+    <ID>5</ID>
+    <!--复活节岛-->
+    <IconName>NewGame_Temperature_2</IconName>
+    <Score>300</Score>
+    <TemperatureIndex>101</TemperatureIndex>
+  </GameModeTemperatureSet>
+
+</ArrayOfGameModeTemperatureSet>

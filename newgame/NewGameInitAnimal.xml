@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<ArrayOfGameModeInitFreeAnimal xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--开局动物选项配置说明
+GameModeInitFreeAnimal 单个选项配置内容
+  ID 选项id，唯一
+  IconName 选项文字描述
+  Score 该选项的难度分数
+  TypeNum 动物种类
+  NumRange 动物数量随机范围
+    Lower 下限
+    Upper 上限
+  -->
+
+  <!--开局动物-->
+  
+  <GameModeInitFreeAnimal>
+    <!--选项id，唯一-->
+    <ID>1</ID>
+    <!--难度评分-->
+    <Score>150</Score>
+    <!--无-->
+    <!--选项文字描述-->
+    <IconName>NewGame_InitAnimal_1</IconName>
+    <!--动物种类-->
+    <TypeNum>0</TypeNum>
+    <!--动物数量随机范围-->
+	  <NumRange>
+      <!--下限-->
+      <Lower>6</Lower>
+      <!--上限-->
+      <Upper>12</Upper>
+    </NumRange>
+  </GameModeInitFreeAnimal>
+  
+  <GameModeInitFreeAnimal>
+    <ID>2</ID>
+    <Score>50</Score>
+    <!--家养动物1种-->
+    <IconName>NewGame_InitAnimal_2</IconName>
+    <TypeNum>1</TypeNum>
+	  <NumRange>
+      <Lower>6</Lower>
+      <Upper>12</Upper>
+    </NumRange>
+  </GameModeInitFreeAnimal>
+  
+</ArrayOfGameModeInitFreeAnimal>

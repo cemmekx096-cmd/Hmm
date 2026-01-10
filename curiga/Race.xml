@@ -1,0 +1,1756 @@
+<?xml version="1.0"?>
+<ArrayOfRaceConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!--  职业配置说明
+Description of Occupation Configuration
+ID  int  ID不重复
+No Duplicates for IDs
+Name string 职业名字
+Occupation Name
+Icon string 对应的职业图标
+Occupation Icon
+FollowBuildLock bool 是否跟随建筑锁定（是否和建筑绑定的职业）
+Whether to be locked by buildings? (Whether to bind occupation and construction)
+InitShow bool 是否初始显示（决定该职业是否的在建造对应建筑再显示）
+Whether to display at the beginning (Determine whether the occupation will be displayed after the corresponding building is constructed)
+DeadLogList  死亡后有墓碑的描述列表
+List of Descriptions of Tombstones after Death
+DeadLog string 死亡描述
+Death Description
+TombDeadLogList  死亡后没有墓碑的描述列表
+List of Descriptions without Tombstones after Death
+DeadLog string 死亡描述
+Death Description
+DeathSelector Config2Int Int1每多少年触发一次 Int2达到多少人才会触发意外死亡
+Int1 is for the number of years between triggers and Int2 for the number of people required to trigger accidental deaths
+DeathChance int 意外死亡的概率百分比
+Probability of Accidental Death (%)
+LogTxt1 string 帮助日志描述1
+Help Log Description 1
+LogTxt2 string 帮助日志描述2
+Help Log Description 2
+LogIcon string 日志对应的图标（图标路径不对应多语言）
+Log Icon (The icon path does not correspond to multiple languages)
+WorkBuild int 日志工作建筑
+Log Work Building
+RelevanceBuild string 日志关联建筑（使用 | 隔开建筑ID） 
+Log Related Building (Separate building ID by |) 
+ 
+	
+	
+	备注：
+	int			整型，只能填整数
+    string		字符串类型，字母或者文字
+				string类型的需要对应多语言中的ID
+	bool		布尔类型，true或者false
+	
+	
+	
+	职业枚举：
+	CitizenCareer_Unknow 	= 0;		//未知
+  	CitizenCareer_Idler 	= 1;		//闲人
+  	CitizenCareer_Builder 	= 2;		//建筑工
+  	CitizenCareer_Farmer 	= 3; 		//农民
+  	CitizenCareer_Herdsman 	= 4; 		//牧民
+  	CitizenCareer_Collecter = 5; 		//采集者
+  	CitizenCareer_Fisher 	= 6; 		//渔民
+  	CitizenCareer_Hunter 	= 7; 		//猎人
+  	CitizenCareer_Timberjack= 8; 		//伐木工
+  	CitizenCareer_Forester 	= 9; 		//护林人
+  	CitizenCareer_Pharmacist= 10; 		//药师【废弃】
+  	CitizenCareer_Miers 	= 11;		//黄金矿工
+  	CitizenCareer_Stonemason= 12;		//石匠
+  	CitizenCareer_Blacksmith= 13;		//铁匠
+  	CitizenCareer_Winemaker = 14;		//酿造师
+  	CitizenCareer_Tailor 	= 15;		//裁缝
+  	CitizenCareer_Vendor 	= 16;		//商贩
+  	CitizenCareer_Trader	= 17;		//贸易者
+  	CitizenCareer_Teacher 	= 18;		//教师
+  	CitizenCareer_Doctor 	= 19;		//医生
+  	CitizenCareer_GodFather = 20;		//牧师 	
+  	CitizenCareer_Bather 	= 21;		//搓澡工
+  	CitizenCareer_WellWorker= 22;		//取水工
+  	CitizenCareer_Barman 	= 23;		//酒保【废弃】
+  	CitizenCareer_Fixer 	= 24;		//维修工
+  	CitizenCareer_Porter 	= 25;		//篝火搬运工
+  	CitizenCareer_HoneyCollecter = 26;	//养蜂人
+  	CitizenCareer_Weavers 	= 27;		//纺织工
+  	CitizenCareer_FuelWorker = 28;		//燃料工
+	
+	CitizenCareer_MillWorker = 29;		//磨坊工
+	CitizenCareer_Baker    = 30;		//烘焙师
+	CitizenCareer_Butcher   = 31;		//屠夫
+	CitizenCareer_OilWorker = 32;		//油脂工
+	CitizenCareer_SugarWorker = 33;		//制糖工
+	CitizenCareer_JamWorker = 34;		//果酱工
+	CitizenCareer_SaltWorker = 35;		//制盐工
+	CitizenCareer_PickleWorker = 36;	//腌制工
+	CitizenCareer_ReedWorker = 37;		//芦苇工
+	CitizenCareer_WeavingWorker = 38;	//编织工
+	CitizenCareer_SmeltWorker = 39;		//熔炼工
+	CitizenCareer_DigSandWorker = 40;	//挖沙工
+	CitizenCareer_PaperWorker = 41;		//造纸工
+	CitizenCareer_Researcher = 42;		//研究人员
+	CitizenCareer_ManureWorker = 43;	//肥料工
+	CitizenCareer_FeedWorker = 44;		//饲料工	
+	CitizenCareer_PackageWorker = 45;	//打包工【废弃】
+	CitizenCareer_WoodWorker = 46;		//木工 改糖果工
+	CitizenCareer_BaconWorker = 47;		//熏肉工
+	CitizenCareer_CanWorker = 48;		//罐头工
+	CitizenCareer_TextileWorker = 49;	//家纺工
+	CitizenCareer_FurnitureWorker = 50;	//家具工
+	CitizenCareer_LightWorker = 51;		//制灯工人
+	CitizenCareer_PotteryWorker = 52;	//陶艺工人
+	CitizenCareer_MasonryWorker = 53;	//砌石工人
+	CitizenCareer_FishPondsWorker = 54;	//鱼塘工人
+	CitizenCareer_TransitWorker = 55;	//中转工
+	CitizenCareer_Cooker		= 56;	//厨师
+	CitizenCareer_LeatherWorker = 57;	//皮具工人
+	CitizenCareer_ShopAssistant = 58;	//店员【废弃】
+	CitizenCareer_SericultureWorker = 59;	//养蚕工人
+	CitizenCareer_Actor			= 60;	//演员
+	CitizenCareer_SupplyWorker = 61;	//供应工人
+	CitizenCareer_Minter 		= 62;	//铸币工
+	CitizenCareer_JewelryWorker = 63;	//珠宝工人
+	CitizenCareer_CarvingWorker = 64;	//雕刻工人
+	CitizenCareer_Hatter		= 65;	//淘金工人
+	CitizenCareer_JadeWorker 	= 66;	//玉石工人
+	CitizenCareer_DrinkWorker 	= 67;	//饮品工人
+	CitizenCareer_BoilerWorker 	= 68;	//锅炉工
+	CitizenCareer_Sheriff 		= 69;	//治安官
+	CitizenCareer_BankWorker	= 70 ;	//柜员
+	CitizenCareer_Depoter	= 71 ;	//补给工
+	CitizenCareer_DungPicker 	= 72;	//挑粪工
+	
+  	CitizenCareer_Child 		= 99;		//儿童
+  	CitizenCareer_Student 		= 100;		//学生
+  	CitizenCareer_Immigration 	= 101;		//流民--> 
+
+
+
+
+ <RaceConfig>
+    <ID>1</ID>
+    <Name>Race_Name_1</Name>
+    <!--图标-->
+    <Icon>Icon_profession_worker</Icon>
+    <!--职业所分标签类型-->
+    <TagOrder>0</TagOrder>
+	 <!--职业是否与建筑绑定-->
+    <FollowBuildLock>false</FollowBuildLock>
+	 <!--是否初始显示-->
+    <InitShow>true</InitShow>
+    <DeathSelector>
+      <!--死亡的间隔年限-->
+      <Int1>1</Int1>
+      <!--触发死亡的人数-->
+      <Int2>50</Int2>
+    </DeathSelector>
+    <!--死亡的概率-->
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_1</LogTxt1>
+    <LogTxt2>Race_LogTxt_2</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>
+    <WorkBuild>1</WorkBuild>-->
+    <RelevanceBuild>1004|1006</RelevanceBuild>    
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>2</ID>
+    <Name>Race_Name_2</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <TagOrder>0</TagOrder>
+	<!--职业是否与建筑绑定-->
+    <FollowBuildLock>false</FollowBuildLock>
+	<!--是否初始显示-->
+    <InitShow>true</InitShow>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <LogTxt1>Race_LogTxt_3</LogTxt1>
+    <LogTxt2>Race_LogTxt_4</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>
+    <WorkBuild>1</WorkBuild>-->
+    <RelevanceBuild>4022</RelevanceBuild>
+  </RaceConfig>
+  <RaceConfig>
+    <ID>3</ID>
+    <Name>Race_Name_3</Name>
+    <Icon>Icon_profession_builder</Icon>
+	<!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	 <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>1</TagOrder>
+    <Tag>Race_Tag_1</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+     <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_5</LogTxt1>
+    <LogTxt2>Race_LogTxt_6</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>2002</WorkBuild>
+    <RelevanceBuild>2002|2003</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>4</ID>
+    <Name>Race_Name_4</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>1</TagOrder>
+    <Tag>Race_Tag_2</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_7</LogTxt1>
+    <LogTxt2>Race_LogTxt_8</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>2004</WorkBuild>
+    <RelevanceBuild>2004</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>5</ID>
+    <Name>Race_Name_5</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>1</TagOrder>
+    <Tag>Race_Tag_3</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>5</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_9</LogTxt1>
+    <LogTxt2>Race_LogTxt_10</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>2007</WorkBuild>
+    <RelevanceBuild>2007</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>6</ID>
+    <Name>Race_Name_6</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>1</TagOrder>
+    <Tag>Race_Tag_4</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>    
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_11</LogTxt1>
+    <LogTxt2>Race_LogTxt_12</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>2005</WorkBuild>
+    <RelevanceBuild>2016|2030</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>7</ID>
+    <Name>Race_Name_7</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>1</TagOrder>
+    <Tag>Race_Tag_5</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>5</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_13</LogTxt1>
+    <LogTxt2>Race_LogTxt_14</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>2006</WorkBuild>
+    <RelevanceBuild>2006</RelevanceBuild>
+  </RaceConfig>
+
+
+  <RaceConfig>
+    <ID>8</ID>
+    <Name>Race_Name_8</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>2</TagOrder>
+    <Tag>Race_Tag_6</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_15</LogTxt1>
+    <LogTxt2>Race_LogTxt_16</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3001</WorkBuild>
+    <RelevanceBuild>3011|3012</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>9</ID>
+    <Name>Race_Name_9</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>2</TagOrder>
+    <Tag>Race_Tag_7</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>5</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_17</LogTxt1>
+    <LogTxt2>Race_LogTxt_18</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3002</WorkBuild>
+    <RelevanceBuild>3002|2018</RelevanceBuild>
+  </RaceConfig>
+
+ <!--
+  <RaceConfig>
+    <ID>10</ID>
+    <Name>Race_Name_10</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <FollowBuildLock>true</FollowBuildLock>
+    <InitShow>false</InitShow>
+    <TagOrder>2</TagOrder>
+    <Tag>Race_Tag_8</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>5</DeathChance>
+    <LogTxt1>Race_LogTxt_19</LogTxt1>
+    <LogTxt2>Race_LogTxt_20</LogTxt2>
+    <WorkBuild>3003</WorkBuild>
+    <RelevanceBuild>2009</RelevanceBuild>
+  </RaceConfig>
+  -->
+
+  <RaceConfig>
+    <ID>11</ID>
+    <Name>Race_Name_11</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>2</TagOrder>
+    <Tag>Race_Tag_9</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>10</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_21</LogTxt1>
+    <LogTxt2>Race_LogTxt_22</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>2027</WorkBuild>
+    <RelevanceBuild>2028|2029</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>12</ID>
+    <Name>Race_Name_12</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>2</TagOrder>
+    <Tag>Race_Tag_10</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>10</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_23</LogTxt1>
+    <LogTxt2>Race_LogTxt_24</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>2031</WorkBuild>
+    <RelevanceBuild>2032|2034</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>13</ID>
+    <Name>Race_Name_13</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_11</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_25</LogTxt1>
+    <LogTxt2>Race_LogTxt_26</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3004</WorkBuild>
+    <RelevanceBuild>3004|3027</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>14</ID>
+    <Name>Race_Name_14</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_12</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_27</LogTxt1>
+    <LogTxt2>Race_LogTxt_28</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3015</WorkBuild>
+    <RelevanceBuild>3015</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>15</ID>
+    <Name>Race_Name_15</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_13</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_29</LogTxt1>
+    <LogTxt2>Race_LogTxt_30</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3005</WorkBuild>
+    <RelevanceBuild>3025|3058</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>16</ID>
+    <Name>Race_Name_16</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_14</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_31</LogTxt1>
+    <LogTxt2>Race_LogTxt_32</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>1007</WorkBuild>
+    <RelevanceBuild>1007|1015</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>17</ID>
+    <Name>Race_Name_17</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_15</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_33</LogTxt1>
+    <LogTxt2>Race_LogTxt_34</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>4001</WorkBuild>
+    <RelevanceBuild>4034|4017</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>18</ID>
+    <Name>Race_Name_18</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_16</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_35</LogTxt1>
+    <LogTxt2>Race_LogTxt_36</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>4002</WorkBuild>
+    <RelevanceBuild>4015|4019</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>19</ID>
+    <Name>Race_Name_19</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_17</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_37</LogTxt1>
+    <LogTxt2>Race_LogTxt_38</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>4012</WorkBuild>
+    <RelevanceBuild>4012|4007</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>20</ID>
+    <Name>Race_Name_20</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_18</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_39</LogTxt1>
+    <LogTxt2>Race_LogTxt_40</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>4004</WorkBuild>
+    <RelevanceBuild>4004</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>21</ID>
+    <Name>Race_Name_21</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_19</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_41</LogTxt1>
+    <LogTxt2>Race_LogTxt_42</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>4006</WorkBuild>
+    <RelevanceBuild>4006</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>22</ID>
+    <Name>Race_Name_22</Name>
+    <Icon>Icon_profession_builder</Icon>
+	  <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>1</TagOrder>
+    <Tag>Race_Tag_20</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_43</LogTxt1>
+    <LogTxt2>Race_LogTxt_44</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>2035</WorkBuild>
+    <RelevanceBuild>2035|2036</RelevanceBuild>
+  </RaceConfig>
+
+<!--
+  <RaceConfig>
+    <ID>23</ID>
+    <Name>Race_Name_23</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <FollowBuildLock>true</FollowBuildLock>
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_21</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <LogTxt1>Race_LogTxt_45</LogTxt1>
+    <LogTxt2>Race_LogTxt_46</LogTxt2>
+    <WorkBuild>4005</WorkBuild>
+    <RelevanceBuild>4005</RelevanceBuild>
+  </RaceConfig>
+  -->
+
+  <RaceConfig>
+    <ID>24</ID>
+    <Name>Race_Name_24</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <TagOrder>0</TagOrder>
+	  <!--职业是否与建筑绑定-->
+    <FollowBuildLock>false</FollowBuildLock>
+  	<!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_47</LogTxt1>
+    <LogTxt2>Race_LogTxt_48</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>
+    <WorkBuild>1</WorkBuild>-->
+    <RelevanceBuild>2|3</RelevanceBuild>
+  </RaceConfig>
+
+<!--篝火工：废弃职业会报错，暂不删除，在帮助日志有多余说明-->
+  <RaceConfig>
+    <ID>25</ID>
+    <Name>Race_Name_25</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <FollowBuildLock>false</FollowBuildLock>
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_22</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    </RaceConfig>
+
+  <RaceConfig>
+    <ID>26</ID>
+    <Name>Race_Name_26</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>1</TagOrder>
+    <Tag>Race_Tag_23</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_49</LogTxt1>
+    <LogTxt2>Race_LogTxt_50</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>2008</WorkBuild>
+    <RelevanceBuild>2008</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>27</ID>
+    <Name>Race_Name_27</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_24</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_51</LogTxt1>
+    <LogTxt2>Race_LogTxt_52</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3009</WorkBuild>
+    <RelevanceBuild>3009|3010</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>28</ID>
+    <Name>Race_Name_28</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_25</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_53</LogTxt1>
+    <LogTxt2>Race_LogTxt_54</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3013</WorkBuild>
+    <RelevanceBuild>3013</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>29</ID>
+    <Name>Race_Name_29</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_26</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_55</LogTxt1>
+    <LogTxt2>Race_LogTxt_56</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3016</WorkBuild>
+    <RelevanceBuild>3016|3017</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>30</ID>
+    <Name>Race_Name_30</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_27</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_57</LogTxt1>
+    <LogTxt2>Race_LogTxt_58</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3018</WorkBuild>
+    <RelevanceBuild>3018|3043</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>31</ID>
+    <Name>Race_Name_31</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_28</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+     <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_59</LogTxt1>
+    <LogTxt2>Race_LogTxt_60</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3019</WorkBuild>
+    <RelevanceBuild>3019</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>32</ID>
+    <Name>Race_Name_32</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_29</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_61</LogTxt1>
+    <LogTxt2>Race_LogTxt_62</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3020</WorkBuild>
+    <RelevanceBuild>3020|3059</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>33</ID>
+    <Name>Race_Name_33</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_30</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_63</LogTxt1>
+    <LogTxt2>Race_LogTxt_64</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3021</WorkBuild>
+    <RelevanceBuild>3021</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>34</ID>
+    <Name>Race_Name_34</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_31</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_65</LogTxt1>
+    <LogTxt2>Race_LogTxt_66</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3022</WorkBuild>
+    <RelevanceBuild>3022</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>35</ID>
+    <Name>Race_Name_35</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>1</TagOrder>
+    <Tag>Race_Tag_32</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_67</LogTxt1>
+    <LogTxt2>Race_LogTxt_68</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>2011</WorkBuild>
+    <RelevanceBuild>2011</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>36</ID>
+    <Name>Race_Name_36</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_33</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_69</LogTxt1>
+    <LogTxt2>Race_LogTxt_70</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3023</WorkBuild>
+    <RelevanceBuild>3023</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>37</ID>
+    <Name>Race_Name_37</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>2</TagOrder>
+    <Tag>Race_Tag_34</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_71</LogTxt1>
+    <LogTxt2>Race_LogTxt_72</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>2012</WorkBuild>
+    <RelevanceBuild>2012</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>38</ID>
+    <Name>Race_Name_38</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_35</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_73</LogTxt1>
+    <LogTxt2>Race_LogTxt_74</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3024</WorkBuild>
+    <RelevanceBuild>3024</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>39</ID>
+    <Name>Race_Name_39</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_36</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+     <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_75</LogTxt1>
+    <LogTxt2>Race_LogTxt_76</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3026</WorkBuild>
+    <RelevanceBuild>3026|3060</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>40</ID>
+    <Name>Race_Name_40</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>2</TagOrder>
+    <Tag>Race_Tag_37</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_77</LogTxt1>
+    <LogTxt2>Race_LogTxt_78</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>2013</WorkBuild>
+    <RelevanceBuild>2013</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>41</ID>
+    <Name>Race_Name_41</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_38</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_79</LogTxt1>
+    <LogTxt2>Race_LogTxt_80</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3029</WorkBuild>
+    <RelevanceBuild>3029|3047</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>42</ID>
+    <Name>Race_Name_42</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>2</TagOrder>
+    <Tag>Race_Tag_39</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_81</LogTxt1>
+    <LogTxt2>Race_LogTxt_82</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3030</WorkBuild>
+    <RelevanceBuild>3030|3052</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>43</ID>
+    <Name>Race_Name_43</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_40</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业肥料工-->
+    <LogTxt1>Race_LogTxt_134</LogTxt1>
+    <LogTxt2>Race_LogTxt_135</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3031</WorkBuild>
+    <RelevanceBuild>3031</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>44</ID>
+    <Name>Race_Name_44</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_41</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+     <!--帮助日志：职业饲料工-->
+    <LogTxt1>Race_LogTxt_136</LogTxt1>
+    <LogTxt2>Race_LogTxt_137</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3032</WorkBuild>
+    <RelevanceBuild>3032</RelevanceBuild>
+  </RaceConfig>
+
+<!--打包工：废弃职业会报错，暂不删除，在帮助日志有多余说明-->
+  <RaceConfig>
+    <ID>45</ID>
+    <Name>Race_Name_45</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <FollowBuildLock>false</FollowBuildLock>
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_42</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>46</ID>
+    <Name>Race_Name_46</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>false</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_43</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <LogTxt1>Race_LogTxt_83</LogTxt1>
+    <LogTxt2>Race_LogTxt_84</LogTxt2>
+    <WorkBuild>3063</WorkBuild>
+    <RelevanceBuild>3063</RelevanceBuild>
+    <!--帮助日志：职业木工-->
+  </RaceConfig>
+
+<!--
+  <RaceConfig>
+    <ID>47</ID>
+    <Name>Race_Name_47</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <FollowBuildLock>true</FollowBuildLock>
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_44</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <LogTxt1>Race_LogTxt_83</LogTxt1>
+    <LogTxt2>Race_LogTxt_84</LogTxt2>
+    <WorkBuild>3036</WorkBuild>
+    <RelevanceBuild>3036</RelevanceBuild>
+  </RaceConfig>
+-->
+
+  <RaceConfig>
+    <ID>48</ID>
+    <Name>Race_Name_48</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_45</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_85</LogTxt1>
+    <LogTxt2>Race_LogTxt_86</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3037</WorkBuild>
+    <RelevanceBuild>3037</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>49</ID>
+    <Name>Race_Name_49</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_46</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_87</LogTxt1>
+    <LogTxt2>Race_LogTxt_88</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3038</WorkBuild>
+    <RelevanceBuild>3038|3048</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>50</ID>
+    <Name>Race_Name_50</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_47</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_89</LogTxt1>
+    <LogTxt2>Race_LogTxt_90</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3039</WorkBuild>
+    <RelevanceBuild>3039|3049</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>51</ID>
+    <Name>Race_Name_51</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_48</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_91</LogTxt1>
+    <LogTxt2>Race_LogTxt_92</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3040</WorkBuild>
+    <RelevanceBuild>3040</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>52</ID>
+    <Name>Race_Name_52</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_49</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_93</LogTxt1>
+    <LogTxt2>Race_LogTxt_94</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3041</WorkBuild>
+    <RelevanceBuild>3041|2013</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>53</ID>
+    <Name>Race_Name_53</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_50</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_95</LogTxt1>
+    <LogTxt2>Race_LogTxt_96</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3042</WorkBuild>
+    <RelevanceBuild>3042|2031</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>54</ID>
+    <Name>Race_Name_54</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_51</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_97</LogTxt1>
+    <LogTxt2>Race_LogTxt_98</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>2019</WorkBuild>
+    <RelevanceBuild>2019</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>55</ID>
+    <Name>Race_Name_55</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_52</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_99</LogTxt1>
+    <LogTxt2>Race_LogTxt_100</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>1008</WorkBuild>
+    <RelevanceBuild>1008</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>56</ID>
+    <Name>Race_Name_56</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>1</TagOrder>
+    <Tag>Race_Tag_53</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_101</LogTxt1>
+    <LogTxt2>Race_LogTxt_102</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3044</WorkBuild>
+    <RelevanceBuild>3044|3061</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>57</ID>
+    <Name>Race_Name_57</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_54</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_103</LogTxt1>
+    <LogTxt2>Race_LogTxt_104</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3045</WorkBuild>
+    <RelevanceBuild>3045|3062</RelevanceBuild>
+  </RaceConfig>
+
+   <!--<RaceConfig>
+    <ID>58</ID>
+    <Name>Race_Name_58</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <FollowBuildLock>true</FollowBuildLock>
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_55</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <LogTxt1>Race_LogTxt_105</LogTxt1>
+    <LogTxt2>Race_LogTxt_106</LogTxt2>
+    <WorkBuild>4014</WorkBuild>
+    <RelevanceBuild>4014|3045</RelevanceBuild>
+  </RaceConfig>-->
+
+  <RaceConfig>
+    <ID>59</ID>
+    <Name>Race_Name_59</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>3</TagOrder>
+    <Tag>Race_Tag_56</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_107</LogTxt1>
+    <LogTxt2>Race_LogTxt_108</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3046</WorkBuild>
+    <RelevanceBuild>3046|3048</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>60</ID>
+    <Name>Race_Name_60</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_57</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_109</LogTxt1>
+    <LogTxt2>Race_LogTxt_110</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>4018</WorkBuild>
+    <RelevanceBuild>4018</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>61</ID>
+    <Name>Race_Name_61</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_58</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_111</LogTxt1>
+    <LogTxt2>Race_LogTxt_112</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>1012</WorkBuild>
+    <RelevanceBuild>1012</RelevanceBuild>
+  </RaceConfig>
+  
+    <RaceConfig>
+    <ID>62</ID>
+    <Name>Race_Name_62</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_58</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_113</LogTxt1>
+    <LogTxt2>Race_LogTxt_114</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3051</WorkBuild>
+    <RelevanceBuild>3051|2028</RelevanceBuild>
+  </RaceConfig>
+  
+    <RaceConfig>
+    <ID>63</ID>
+    <Name>Race_Name_63</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_58</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_115</LogTxt1>
+    <LogTxt2>Race_LogTxt_116</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3053</WorkBuild>
+    <RelevanceBuild>3053|3056</RelevanceBuild>
+  </RaceConfig>
+  
+    <RaceConfig>
+    <ID>64</ID>
+    <Name>Race_Name_64</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_58</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_117</LogTxt1>
+    <LogTxt2>Race_LogTxt_118</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3055</WorkBuild>
+    <RelevanceBuild>3055|2028</RelevanceBuild>
+  </RaceConfig>
+  
+    <RaceConfig>
+    <ID>65</ID>
+    <Name>Race_Name_65</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_58</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_119</LogTxt1>
+    <LogTxt2>Race_LogTxt_120</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3056</WorkBuild>
+    <RelevanceBuild>3056|2013</RelevanceBuild>
+  </RaceConfig>
+  
+      <RaceConfig>
+    <ID>66</ID>
+    <Name>Race_Name_66</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_58</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_121</LogTxt1>
+    <LogTxt2>Race_LogTxt_122</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3057</WorkBuild>
+    <RelevanceBuild>3057|2032</RelevanceBuild>
+  </RaceConfig>
+  
+   <RaceConfig>
+    <ID>67</ID>
+    <Name>Race_Name_67</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_58</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_123</LogTxt1>
+    <LogTxt2>Race_LogTxt_124</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>3034</WorkBuild>
+    <RelevanceBuild>3034</RelevanceBuild>
+  </RaceConfig>
+  
+  <RaceConfig>
+    <ID>68</ID>
+    <Name>Race_Name_68</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_58</Tag>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_125</LogTxt1>
+    <LogTxt2>Race_LogTxt_126</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>4021</WorkBuild>
+    <RelevanceBuild>4021</RelevanceBuild>
+  </RaceConfig>
+  
+  <RaceConfig>
+    <ID>69</ID>
+    <Name>Race_Name_69</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_58</Tag>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_127</LogTxt1>
+    <LogTxt2>Race_LogTxt_128</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>4023</WorkBuild>
+    <RelevanceBuild>4023</RelevanceBuild>
+  </RaceConfig>
+  
+  <RaceConfig>
+    <ID>70</ID>
+    <Name>Race_Name_70</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_58</Tag>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_129</LogTxt1>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>4030</WorkBuild>
+    <RelevanceBuild>4030</RelevanceBuild>
+  </RaceConfig>
+
+  <RaceConfig>
+    <ID>71</ID>
+    <Name>Race_Name_71</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业是否与建筑绑定-->
+    <FollowBuildLock>true</FollowBuildLock>
+	  <!--是否初始显示-->
+    <InitShow>false</InitShow>
+    <TagOrder>4</TagOrder>
+    <Tag>Race_Tag_58</Tag>
+    <!--帮助日志：职业-->
+    <LogTxt1>Race_LogTxt_130</LogTxt1>
+    <LogTxt2>Race_LogTxt_131</LogTxt2>
+   <!--图片 <LogIcon>1</LogIcon>-->
+    <WorkBuild>1017</WorkBuild>
+    <RelevanceBuild>1017</RelevanceBuild>
+  </RaceConfig>
+  
+  <RaceConfig>
+    <ID>100</ID>
+    <Name>Race_Name_100</Name>
+    <Icon>Icon_profession_builder</Icon>
+    <TagOrder>0</TagOrder>
+	<!--职业是否与建筑绑定-->
+    <FollowBuildLock>false</FollowBuildLock>
+    <DeathSelector>
+      <Int1>1</Int1>
+      <Int2>50</Int2>
+    </DeathSelector>
+    <DeathChance>1</DeathChance>
+  </RaceConfig>
+  
+    <RaceConfig>
+    <ID>99</ID>
+    <Name>Race_Name_99</Name>
+    <!--图标-->
+    <Icon>Icon_profession_builder</Icon>
+    <!--职业所分标签类型-->
+    <TagOrder>0</TagOrder>
+	 <!--职业是否与建筑绑定-->
+    <FollowBuildLock>false</FollowBuildLock>
+    <!--没有墓地死亡随机文本-->
+    <DeadLogList>
+      <DeadLog>Race_DeadLog_313</DeadLog>
+    </DeadLogList>
+	  <!--有墓地死亡随机文本-->
+    <TombDeadLogList>
+      <DeadLog>Race_TombDeadLog_313</DeadLog>
+    </TombDeadLogList>
+  </RaceConfig>
+</ArrayOfRaceConfig>

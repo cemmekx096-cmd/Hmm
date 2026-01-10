@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<ArrayOfGameModeDisasterSetting xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!--灾难频率选项配置说明
+GameModeDisasterSetting 单个选项配置内容
+  ID 选项id，唯一
+  IconName 选项文字描述
+  Score 该选项的难度分数
+  DisaterIntervalDays 灾难cd 天 
+  -->
+<!--灾难频率-->  
+
+  <GameModeDisasterSetting>
+    <!--选项id，唯一-->
+    <ID>1</ID>
+    <!--关闭灾难-->
+    <!--选项文字描述-->
+    <IconName>NewGame_Disaster_1</IconName>
+    <!--难度评分-->
+	  <Score>0</Score>
+    <!--灾难cd 天-->
+    <DisaterIntervalDays>0</DisaterIntervalDays>
+  </GameModeDisasterSetting>
+  
+  <GameModeDisasterSetting>
+    <ID>2</ID>
+    <!--正常频率灾难-->
+    <IconName>NewGame_Disaster_2</IconName>
+	  <Score>300</Score>
+    <DisaterIntervalDays>720</DisaterIntervalDays>
+  </GameModeDisasterSetting>
+  
+  <GameModeDisasterSetting>
+    <ID>3</ID>
+    <!--较高频率灾难-->
+    <IconName>NewGame_Disaster_3</IconName>
+	  <Score>600</Score>
+    <DisaterIntervalDays>360</DisaterIntervalDays>
+  </GameModeDisasterSetting>
+</ArrayOfGameModeDisasterSetting>

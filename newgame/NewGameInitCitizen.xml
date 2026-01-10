@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<ArrayOfGameModeInitCitizenNum xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--初始市民选项配置说明
+GameModeInitCitizenNum 单个选项配置内容
+  ID 选项id，唯一
+  IconName 选项文字描述
+  Score 该选项的难度分数
+  FamilyNum 开局的家庭组数量 Initial number of family groups                  
+  ChildNum 每个家庭中儿童的数量（Lower对应最小值 Upper对应最大值）  The number of children in each household (Lower is the minimum value and upper is the maximum)
+  AdultAgeRange 成年人的年纪范围天数（Lower对应最小值 Upper对应最大值）  The age range days of adults (Lower is the minimum value and upper is the maximum)
+  ChildAgeRange 儿童的年纪范围天数（Lower对应最小值 Upper对应最大值）  The age range days of children (Lower is the minimum value and upper is the maximum)
+  AdultChildNum 成年儿童数量（可以做闲工但是不能生育的儿童,具体值查看CitizenFunction表）（Lower对应最小值 Upper对应最大值）   Number of adult children (children who can work as idle workers but are infertile when become adults. See CitizenFunction table for the specific values) (Lower is the minimum value and upper is the maximum) 
+  AdultChildAgeRange 成年儿童的年纪范围天数（Lower对应最小值 Upper对应最大值）  The age range days of adult children (Lower is the minimum value and upper is the maximum)
+  isEducation 成人是否接受教育  Whether an adult has been educated
+  -->  
+<!--初始市民选项表-->  
+
+  <GameModeInitCitizenNum>
+    <!--选项id，唯一-->
+    <ID>1</ID>
+    <!--30人-->
+    <!--选项文字描述-->
+    <IconName>NewGame_InitCitizenNum_1</IconName>
+    <!--难度评分-->
+    <Score>30</Score>
+    <!--家庭数量-->
+    <FamilyNum>10</FamilyNum>
+    <!--儿童数量-->
+    <ChildNum>
+      <Lower>1</Lower>
+      <Upper>1</Upper>
+    </ChildNum>
+    <!--成年人年龄范围 天-->
+    <AdultAgeRange>
+      <Lower>1260</Lower>
+      <Upper>2520</Upper>
+    </AdultAgeRange>
+    <!--儿童年龄范围 天-->
+    <ChildAgeRange>
+        <Lower>720</Lower>
+        <Upper>900</Upper>
+    </ChildAgeRange>
+    <!--初始成人受教育情况-->
+    <isEducation>true</isEducation>
+  </GameModeInitCitizenNum>
+
+  <GameModeInitCitizenNum>
+    <ID>2</ID>
+    <!--21人-->
+    <IconName>NewGame_InitCitizenNum_2</IconName>
+    <Score>50</Score>
+    <!--家庭数量-->
+    <FamilyNum>7</FamilyNum>
+    <!--儿童数量-->
+    <ChildNum>
+      <Lower>1</Lower>
+      <Upper>1</Upper>
+    </ChildNum>
+    <!--可工作儿童数量-->
+    <AdultChildNum>
+      <Lower>0</Lower>
+      <Upper>0</Upper>
+    </AdultChildNum>
+    <!--成年人年龄范围 天-->
+    <AdultAgeRange>
+      <Lower>1260</Lower>
+      <Upper>2520</Upper>
+    </AdultAgeRange>
+    <!--儿童年龄范围 天-->
+    <ChildAgeRange>
+        <Lower>540</Lower>
+        <Upper>900</Upper>
+    </ChildAgeRange>
+    <!--可工作儿童年龄范围 天-->
+    <AdultChildAgeRange>
+      <Lower>900</Lower>
+      <Upper>2250</Upper>
+    </AdultChildAgeRange>
+    <!--初始成人受教育情况-->
+    <isEducation>true</isEducation>
+  </GameModeInitCitizenNum>
+
+  <GameModeInitCitizenNum>
+    <ID>3</ID>
+    <!--15人-->
+    <IconName>NewGame_InitCitizenNum_3</IconName>
+    <Score>100</Score>
+    <!--家庭数量-->
+    <FamilyNum>5</FamilyNum>
+    <!--儿童数量-->
+    <ChildNum>
+      <Lower>1</Lower>
+      <Upper>1</Upper>
+    </ChildNum>
+    <!--成年人年龄范围 天-->
+    <AdultAgeRange>
+      <Lower>1260</Lower>
+      <Upper>2520</Upper>
+    </AdultAgeRange>
+    <!--儿童年龄范围 天-->
+    <ChildAgeRange>
+        <Lower>540</Lower>
+        <Upper>900</Upper>
+    </ChildAgeRange>
+    <!--初始成人受教育情况-->
+    <isEducation>true</isEducation>
+  </GameModeInitCitizenNum>
+
+  <GameModeInitCitizenNum>
+    <ID>4</ID>
+    <!--复活节岛专用 300人-->
+    <IconName>NewGame_InitCitizenNum_4</IconName>
+    <Score>50</Score>
+    <!--家庭数量-->
+    <FamilyNum>100</FamilyNum>
+    <!--儿童数量-->
+    <ChildNum>
+      <Lower>1</Lower>
+      <Upper>1</Upper>
+    </ChildNum>
+    <!--成年人年龄范围 天-->
+    <AdultAgeRange>
+      <Lower>1260</Lower>
+      <Upper>2520</Upper>
+    </AdultAgeRange>
+    <!--儿童年龄范围 天-->
+    <ChildAgeRange>
+        <Lower>720</Lower>
+        <Upper>900</Upper>
+    </ChildAgeRange>
+    <!--成年儿童年龄范围 天-->
+    <AdultChildAgeRange>
+      <Lower>900</Lower>
+      <Upper>2250</Upper>
+    </AdultChildAgeRange>
+    <!--初始成人受教育情况-->
+    <isEducation>true</isEducation>
+  </GameModeInitCitizenNum>
+
+  <GameModeInitCitizenNum>
+    <ID>5</ID>
+    <!--教程3专用 36人-->
+    <IconName>NewGame_InitCitizenNum_4</IconName>
+    <Score>50</Score>
+    <!--家庭数量-->
+    <FamilyNum>12</FamilyNum>
+    <!--儿童数量-->
+    <ChildNum>
+      <Lower>1</Lower>
+      <Upper>1</Upper>
+    </ChildNum>
+    <!--成年人年龄范围 天-->
+    <AdultAgeRange>
+      <Lower>1260</Lower>
+      <Upper>2520</Upper>
+    </AdultAgeRange>
+    <!--儿童年龄范围 天-->
+    <ChildAgeRange>
+        <Lower>540</Lower>
+        <Upper>900</Upper>
+    </ChildAgeRange>
+    <!--成年儿童年龄范围 天-->
+    <AdultChildAgeRange>
+      <Lower>900</Lower>
+      <Upper>2250</Upper>
+    </AdultChildAgeRange>
+    <!--初始成人受教育情况-->
+    <isEducation>true</isEducation>
+  </GameModeInitCitizenNum>
+
+</ArrayOfGameModeInitCitizenNum>

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<ArrayOfHillNumItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--山脉设置-->
+  
+  <HillNumItem>
+    <ID>1</ID>
+    <!--少-->
+    <Name>NewGame_HillNum_1</Name>
+	  <hillPram>
+      <h1Size>15</h1Size>
+      <h1Scale>120</h1Scale>
+      <h1Detail>0.01</h1Detail>
+      <h2Size>60</h2Size>
+      <h2Scale>10</h2Scale>
+      <h3Size>100</h3Size>
+      <h3Scale>0</h3Scale>
+      <HillSizeScale>2</HillSizeScale>
+      <HillHScale>1</HillHScale>
+      <landH>90</landH>
+      <landH2>30</landH2>
+      <landH2Height>0</landH2Height>
+      <landShowH>23.3</landShowH>
+    </hillPram>
+  </HillNumItem>
+  
+  <HillNumItem>
+    <ID>2</ID>
+    <!--中-->
+    <Name>NewGame_HillNum_2</Name>
+	  <hillPram>
+      <h1Size>12</h1Size>
+      <h1Scale>125</h1Scale>
+      <h1Detail>0.01</h1Detail>
+      <h2Size>50</h2Size>
+      <h2Scale>20</h2Scale>
+      <h3Size>100</h3Size>
+      <h3Scale>2.5</h3Scale>
+      <HillSizeScale>1.31</HillSizeScale>
+      <HillHScale>0.6</HillHScale>
+      <landH>90</landH>
+      <landH2>30</landH2>
+      <landH2Height>0</landH2Height>
+      <landShowH>23.3</landShowH>
+    </hillPram>
+  </HillNumItem>
+    
+  <HillNumItem>
+    <ID>3</ID>
+    <!--多-->
+    <Name>NewGame_HillNum_3</Name>
+	  <hillPram>
+      <h1Size>9.5</h1Size>
+      <h1Scale>145</h1Scale>
+      <h1Detail>0</h1Detail>
+      <h2Size>70</h2Size>
+      <h2Scale>20</h2Scale>
+      <h3Size>98.03</h3Size>
+      <h3Scale>0</h3Scale>
+      <HillSizeScale>1.0</HillSizeScale>
+      <HillHScale>0.38</HillHScale>
+      <landH>90</landH>
+      <landH2>30</landH2>
+      <landH2Height>0</landH2Height>
+      <landShowH>23.3</landShowH>
+    </hillPram>
+  </HillNumItem>
+
+</ArrayOfHillNumItem>

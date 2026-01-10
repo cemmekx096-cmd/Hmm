@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<ArrayOfGameModeInitCitizenState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!--市民初始状态选项配置说明
+GameModeInitCitizenState 单个选项配置内容
+  ID 选项id，唯一
+  IconName 选项文字描述
+  Score 该选项的难度分数
+  BuffsList 增加的buff列表
+    Buffs 对应的buff.xml中的ID  
+  -->
+
+<!--市民初始状态-->
+  
+  <GameModeInitCitizenState>
+    <!--选项id，唯一-->
+  	<ID>1</ID>
+    <!--幸福度和健康度高-->
+    <!--选项文字描述-->
+	  <IconName>NewGame_InitCitizenState_1</IconName>
+    <!--难度评分-->
+	  <Score>25</Score>
+    <!--增加的buff列表-->
+    <BuffsList>
+      <!--对应的buff.xml中的ID  -->
+      <Buffs>30013</Buffs>
+      <Buffs>30014</Buffs>
+    </BuffsList>
+  </GameModeInitCitizenState>
+
+  <GameModeInitCitizenState>
+  	<ID>2</ID>
+    <!--标准-->
+	  <IconName>NewGame_InitCitizenState_2</IconName>
+	  <Score>30</Score>
+    <BuffsList>
+    </BuffsList>
+  </GameModeInitCitizenState>
+    
+  <GameModeInitCitizenState>
+  	<ID>3</ID>
+    <!--幸福度和健康度较低-->
+	  <IconName>NewGame_InitCitizenState_3</IconName>
+	  <Score>35</Score>
+    <BuffsList>
+      <Buffs>32013</Buffs>
+      <Buffs>32014</Buffs>
+    </BuffsList>
+  </GameModeInitCitizenState>
+    
+  <GameModeInitCitizenState>
+  	<ID>4</ID>
+    <!--幸福度和健康度低-->
+	  <IconName>NewGame_InitCitizenState_4</IconName>
+	  <Score>40</Score>
+    <BuffsList>
+      <Buffs>33013</Buffs>
+      <Buffs>33014</Buffs>
+    </BuffsList>
+  </GameModeInitCitizenState>
+  
+  
+</ArrayOfGameModeInitCitizenState>

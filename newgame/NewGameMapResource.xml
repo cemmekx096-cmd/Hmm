@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<ArrayOfGameModeMapResourceProduce xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--资源产出选项配置说明
+GameModeMapResourceProduce 单个选项配置内容
+  ID 选项id，唯一
+  IconName 选项文字描述
+  Score 该选项的难度分数
+  MapResourcePercent 资源点加成效果百分比  Buff Effect of Resource Point Percentage
+    ResourceAddPercentList 加成效果列表  Buff Effect List
+      ResourceAddPercent 加成效果（Int1对应资源点类型（查看下方枚举）， Int2加成百分比效果）   Buff effect (Int1 is for resource point type (check the enumeration below) and Int2 for bonus percentage effect)
+  BuffsList 增加的buff列表
+    Buffs 对应的buff.xml中的ID  
+
+  资源点类型枚举：  Resource Points Enumeration:
+  MapInitResourceType_Farm    = 1;  //    沃土   Fertile Farm
+  MapInitResourceType_Pasture   = 2;  //    牧场  Pasture
+  MapInitResourceType_PropsSeed = 3;  //    种子  Seeds
+  MapInitResourceType_Animal    = 4;  //    动物  Animals
+  MapInitResourceType_Fishing   = 5;  //   鱼点  Fishing points
+  -->
+
+<!--资源产出 -->
+  
+  <GameModeMapResourceProduce>
+    <!--选项id，唯一-->
+    <ID>1</ID>
+	  <!--富余-->
+    <!--选项文字描述-->
+    <IconName>NewGame_MapRes_1</IconName>
+    <!--难度评分-->
+    <Score>50</Score>
+	  <!--资源点加成效果百分比  Buff Effect of Resource Point Percentage-->
+    <MapResourcePercent>
+		  <!--加成效果列表  Buff Effect List-->
+      <ResourceAddPercentList>
+		    <!--加成效果（Int1对应资源点类型（查看下方枚举）， Int2加成百分比效果）   Buff effect (Int1 is for resource point type (check the enumeration below) and Int2 for bonus percentage effect)-->
+        <ResourceAddPercent>
+          <Int1>1</Int1>
+          <Int2>60</Int2>
+        </ResourceAddPercent>
+		    <!--加成效果（Int1对应资源点类型（查看下方枚举）， Int2加成百分比效果）   Buff effect (Int1 is for resource point type (check the enumeration below) and Int2 for bonus percentage effect)-->
+        <ResourceAddPercent>
+          <Int1>2</Int1>
+          <Int2>60</Int2>
+        </ResourceAddPercent>
+        <!--加成效果（Int1对应资源点类型（查看下方枚举）， Int2加成百分比效果）   Buff effect (Int1 is for resource point type (check the enumeration below) and Int2 for bonus percentage effect)-->
+        <ResourceAddPercent>
+          <Int1>5</Int1>
+          <Int2>120</Int2>
+        </ResourceAddPercent>
+      </ResourceAddPercentList>
+    </MapResourcePercent>
+    <!--生产建筑的增减产buff-->
+    <!--增加的buff列表-->
+    <BuffsList>
+      <!--对应的buff.xml中的ID  -->
+      <Buffs>30001</Buffs>
+      <Buffs>30002</Buffs>
+      <Buffs>30003</Buffs>
+      <Buffs>30004</Buffs>
+      <Buffs>30005</Buffs>
+      <Buffs>30006</Buffs>
+      <Buffs>30007</Buffs>
+      <Buffs>30008</Buffs>
+      <Buffs>30009</Buffs>
+      <Buffs>30010</Buffs>
+      <Buffs>30011</Buffs>
+      <Buffs>30012</Buffs>
+      <Buffs>30015</Buffs>
+      <Buffs>30016</Buffs>
+      <Buffs>30017</Buffs>
+      <Buffs>30018</Buffs>
+      <Buffs>30019</Buffs>
+      <Buffs>30020</Buffs>
+      <Buffs>30021</Buffs>
+      <Buffs>30022</Buffs>
+      <Buffs>30023</Buffs>
+      <Buffs>30024</Buffs>
+      <Buffs>30025</Buffs>
+	  <Buffs>30026</Buffs>
+    </BuffsList>
+  </GameModeMapResourceProduce>
+
+  <GameModeMapResourceProduce>
+    <ID>2</ID>
+	  <!--标准-->
+    <IconName>NewGame_MapRes_2</IconName>
+    <Score>300</Score>
+	  <!--地图资源-->
+    <MapResourcePercent>
+		  <!--对应资源点加成效果百分比-->
+      <ResourceAddPercentList>
+        <ResourceAddPercent>
+          <Int1>1</Int1>
+          <Int2>50</Int2>
+        </ResourceAddPercent>
+        <ResourceAddPercent>
+          <Int1>2</Int1>
+          <Int2>50</Int2>
+        </ResourceAddPercent>
+        <ResourceAddPercent>
+          <Int1>5</Int1>
+          <Int2>100</Int2>
+        </ResourceAddPercent>
+      </ResourceAddPercentList>
+    </MapResourcePercent>
+    <!--生产建筑的增减产buff-->
+    <BuffsList>
+    </BuffsList>
+  </GameModeMapResourceProduce>
+
+  <GameModeMapResourceProduce>
+    <ID>3</ID>
+	  <!--较少-->
+    <IconName>NewGame_MapRes_3</IconName>
+    <Score>600</Score>
+	  <!--地图资源-->
+    <MapResourcePercent>
+		  <!--对应资源点加成效果百分比-->
+      <ResourceAddPercentList>
+        <ResourceAddPercent>
+          <Int1>1</Int1>
+          <Int2>30</Int2>
+        </ResourceAddPercent>
+        <ResourceAddPercent>
+          <Int1>2</Int1>
+          <Int2>30</Int2>
+        </ResourceAddPercent>
+        <ResourceAddPercent>
+          <Int1>5</Int1>
+          <Int2>60</Int2>
+        </ResourceAddPercent>
+      </ResourceAddPercentList>
+    </MapResourcePercent>
+    <!--生产建筑的增减产buff-->
+    <BuffsList>
+      <Buffs>32001</Buffs>
+      <Buffs>32002</Buffs>
+      <Buffs>32003</Buffs>
+      <Buffs>32004</Buffs>
+      <Buffs>32005</Buffs>
+      <Buffs>32006</Buffs>
+      <Buffs>32007</Buffs>
+      <Buffs>32008</Buffs>
+      <Buffs>32009</Buffs>
+      <Buffs>32010</Buffs>
+      <Buffs>32011</Buffs>
+      <Buffs>32012</Buffs>
+      <Buffs>32015</Buffs>
+      <Buffs>32016</Buffs>
+      <Buffs>32017</Buffs>
+      <Buffs>32018</Buffs>
+      <Buffs>32019</Buffs>
+      <Buffs>32020</Buffs>
+      <Buffs>32021</Buffs>
+      <Buffs>32022</Buffs>
+      <Buffs>32023</Buffs>
+      <Buffs>32024</Buffs>
+      <Buffs>32025</Buffs>
+      <Buffs>32026</Buffs>
+	  <Buffs>32029</Buffs>
+	  <Buffs>32030</Buffs>
+    </BuffsList>
+  </GameModeMapResourceProduce>
+
+  <GameModeMapResourceProduce>
+    <ID>4</ID>
+	  <!--极少-->
+    <IconName>NewGame_MapRes_4</IconName>
+    <Score>1000</Score>
+	  <!--地图资源-->
+    <MapResourcePercent>
+		  <!--对应资源点加成效果百分比-->
+      <ResourceAddPercentList>
+        <ResourceAddPercent>
+          <Int1>1</Int1>
+          <Int2>10</Int2>
+        </ResourceAddPercent>
+        <ResourceAddPercent>
+          <Int1>2</Int1>
+          <Int2>10</Int2>
+        </ResourceAddPercent>
+        <ResourceAddPercent>
+          <Int1>5</Int1>
+          <Int2>20</Int2>
+        </ResourceAddPercent>
+      </ResourceAddPercentList>
+    </MapResourcePercent>
+    <!--生产建筑的增减产buff-->
+    <BuffsList>
+      <Buffs>33001</Buffs>
+      <Buffs>33002</Buffs>
+      <Buffs>33003</Buffs>
+      <Buffs>33004</Buffs>
+      <Buffs>33005</Buffs>
+      <Buffs>33006</Buffs>
+      <Buffs>33007</Buffs>
+      <Buffs>33008</Buffs>
+      <Buffs>33009</Buffs>
+      <Buffs>33010</Buffs>
+      <Buffs>33011</Buffs>
+      <Buffs>33012</Buffs>
+      <Buffs>33015</Buffs>
+      <Buffs>33016</Buffs>
+      <Buffs>33017</Buffs>
+      <Buffs>33018</Buffs>
+      <Buffs>33019</Buffs>
+      <Buffs>33020</Buffs>
+      <Buffs>33021</Buffs>
+      <Buffs>33022</Buffs>
+      <Buffs>33023</Buffs>
+      <Buffs>33024</Buffs>
+      <Buffs>33025</Buffs>
+      <Buffs>33026</Buffs>
+      <Buffs>33027</Buffs>
+      <Buffs>33028</Buffs>
+      <Buffs>33029</Buffs>
+    </BuffsList>
+  </GameModeMapResourceProduce>
+
+  <GameModeMapResourceProduce>
+    <ID>5</ID>
+	  <!--复活节岛专用-->
+    <IconName>NewGame_MapRes_3</IconName>
+    <Score>1000</Score>
+	  <!--地图资源-->
+    <MapResourcePercent>
+		  <!--对应资源点加成效果百分比-->
+      <ResourceAddPercentList>
+        <ResourceAddPercent>
+          <Int1>1</Int1>
+          <Int2>25</Int2>
+        </ResourceAddPercent>
+        <ResourceAddPercent>
+          <Int1>2</Int1>
+          <Int2>25</Int2>
+        </ResourceAddPercent>
+        <ResourceAddPercent>
+          <Int1>5</Int1>
+          <Int2>50</Int2>
+        </ResourceAddPercent>
+      </ResourceAddPercentList>
+    </MapResourcePercent>
+    <!--生产建筑的增减产buff-->
+    <BuffsList>
+      <Buffs>32001</Buffs>
+    </BuffsList>
+  </GameModeMapResourceProduce>
+
+</ArrayOfGameModeMapResourceProduce>

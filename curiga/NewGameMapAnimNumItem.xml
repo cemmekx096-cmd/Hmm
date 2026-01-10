@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<ArrayOfAnimNumItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+<!--地图动物资源-->
+  
+  <AnimNumItem>
+    <ID>1</ID>
+	  <!--少-->
+    <Name>NewGame_AnimalNum_1</Name> 
+    <!--初始野外动物数据-->
+          <AnimalData>
+            <!--动物Id-->
+            <AnimalIdList>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1004</Int1>
+                <Int2>1980</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1005</Int1>
+                <Int2>3960</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1006</Int1>
+                <Int2>6940</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1007</Int1>
+                <Int2>8920</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1008</Int1>
+                <Int2>9950</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1009</Int1>
+                <Int2>10000</Int2>
+              </AnimalId>
+            </AnimalIdList>
+            <!--野生动物群体区域大小长与宽-->
+            <Coorder>
+              <x>40</x>
+              <z>40</z>
+            </Coorder>
+            <!--野生动物群体区域的个数-->
+            <AnimalGroupNum>50</AnimalGroupNum>
+            <!--野生动物群体活动区域个数-->
+            <GroupActiveNum>25</GroupActiveNum>
+            <!--野生动物群体区域内野生群体个数-->
+            <GroupNum>1</GroupNum>
+          </AnimalData>
+  </AnimNumItem>
+ 
+  <AnimNumItem>
+    <ID>2</ID>
+	  <!--标准-->
+    <Name>NewGame_AnimalNum_2</Name> 
+    <!--初始野外动物数据-->
+          <AnimalData>
+            <!--动物Id-->
+            <AnimalIdList>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1004</Int1>
+                <Int2>1980</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1005</Int1>
+                <Int2>3960</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1006</Int1>
+                <Int2>6940</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1007</Int1>
+                <Int2>8920</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1008</Int1>
+                <Int2>9950</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1009</Int1>
+                <Int2>10000</Int2>
+              </AnimalId>
+            </AnimalIdList>
+            <!--野生动物群体区域大小长与宽-->
+            <Coorder>
+              <x>40</x>
+              <z>40</z>
+            </Coorder>
+            <!--野生动物群体区域的个数-->
+            <AnimalGroupNum>50</AnimalGroupNum>
+            <!--野生动物群体活动区域个数-->
+            <GroupActiveNum>23</GroupActiveNum>
+            <!--野生动物群体区域内野生群体个数-->
+            <GroupNum>2</GroupNum>
+          </AnimalData>
+  </AnimNumItem>
+    
+  <AnimNumItem>
+    <ID>3</ID>
+	  <!--多-->
+    <Name>NewGame_AnimalNum_3</Name>
+          <!--初始野外动物数据-->
+          <AnimalData>
+            <!--动物Id-->
+            <AnimalIdList>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1004</Int1>
+                <Int2>1980</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1005</Int1>
+                <Int2>3960</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1006</Int1>
+                <Int2>6940</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1007</Int1>
+                <Int2>8920</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1008</Int1>
+                <Int2>9950</Int2>
+              </AnimalId>
+              <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1009</Int1>
+                <Int2>10000</Int2>
+              </AnimalId>
+            </AnimalIdList>
+            <!--野生动物群体区域大小长与宽-->
+            <Coorder>
+              <x>40</x>
+              <z>40</z>
+            </Coorder>
+            <!--野生动物群体区域的个数-->
+            <AnimalGroupNum>50</AnimalGroupNum>
+            <!--野生动物群体活动区域个数-->
+            <GroupActiveNum>38</GroupActiveNum>
+            <!--野生动物群体区域内野生群体个数-->
+            <GroupNum>2</GroupNum>
+          </AnimalData>
+  </AnimNumItem>
+    
+  <AnimNumItem>
+    <ID>4</ID>
+	  <!--复活节岛-->
+    <Name>NewGame_AnimalNum_1</Name>
+	  <!--初始野外动物数据-->
+    <AnimalData>
+      <!--动物Id-->
+      <AnimalIdList>
+        <AnimalId>
+          <!--Int1动物ID  Int2几率-->
+          <Int1>1004</Int1>
+          <Int2>2500</Int2>
+        </AnimalId>
+        <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1005</Int1>
+                <Int2>5000</Int2>
+        </AnimalId>
+        <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1007</Int1>
+                <Int2>7500</Int2>
+        </AnimalId>
+        <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1008</Int1>
+                <Int2>9950</Int2>
+        </AnimalId>
+        <AnimalId>
+                <!--Int1动物ID  Int2几率-->
+                <Int1>1009</Int1>
+                <Int2>10000</Int2>
+        </AnimalId>
+      </AnimalIdList>
+      <!--野生动物群体区域大小长与宽-->
+      <Coorder>
+        <x>20</x>
+        <z>20</z>
+      </Coorder>
+      <!--野生动物群体区域的个数-->
+      <AnimalGroupNum>25</AnimalGroupNum>
+      <!--野生动物群体活动区域个数-->
+      <GroupActiveNum>15</GroupActiveNum>
+      <!--野生动物群体区域内野生群体个数-->
+      <GroupNum>1</GroupNum>
+    </AnimalData>
+  </AnimNumItem>
+
+</ArrayOfAnimNumItem>

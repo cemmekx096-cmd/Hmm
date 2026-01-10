@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<ArrayOfGameModeTechPointProduceEffect xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!--科技点产出速率选项配置说明
+GameModeTechPointProduceEffect 单个选项配置内容
+  ID 选项id，唯一
+  IconName 选项文字描述
+  Score 该选项的难度分数
+  BuffsList 增加的buff列表
+    Buffs 对应的buff.xml中的ID  
+  -->
+
+<!--科技点产出速率-->
+
+  <GameModeTechPointProduceEffect>
+    <!--选项id，唯一-->
+    <ID>1</ID>
+    <!--较快-->
+    <!--选项文字描述-->
+    <IconName>NewGame_TechPointEffect_1</IconName>
+    <!--难度评分-->
+    <Score>10</Score>
+    <!--增加的buff列表-->
+	  <BuffsList>
+      <!--对应的buff.xml中的ID  -->
+      <Buffs>30027</Buffs>
+      <Buffs>30028</Buffs>
+    </BuffsList>
+  </GameModeTechPointProduceEffect>
+
+  <GameModeTechPointProduceEffect>
+    <ID>2</ID>
+    <!--标准-->
+    <IconName>NewGame_TechPointEffect_2</IconName>
+    <Score>50</Score>
+	  <BuffsList>
+    </BuffsList>
+  </GameModeTechPointProduceEffect>
+
+  <GameModeTechPointProduceEffect>
+    <ID>3</ID>
+    <!--较慢-->
+    <IconName>NewGame_TechPointEffect_3</IconName>
+    <Score>100</Score>
+	  <BuffsList>
+      <Buffs>32027</Buffs>
+      <Buffs>32028</Buffs>
+    </BuffsList>
+  </GameModeTechPointProduceEffect>
+  
+</ArrayOfGameModeTechPointProduceEffect>

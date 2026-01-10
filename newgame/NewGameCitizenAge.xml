@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<ArrayOfGameModeCitizenAgeRange xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!--市民寿命区间选项配置说明
+GameModeCitizenAgeRange 单个选项配置内容
+  ID 选项id，唯一
+  IconName 选项文字描述
+  Score 该选项的难度分数
+  AgeRange 市民寿命区间 年*360/4,4为一年增长的年龄
+    Lower 下限
+    Upper 上限
+  -->
+<!--市民寿命区间-->
+
+  <GameModeCitizenAgeRange>
+    <!--选项id，唯一-->
+    <ID>1</ID>
+    <!--选项文字描述-->
+    <IconName>NewGame_InitCitizenAge_1</IconName>
+    <!--难度评分-->
+    <Score>0</Score>
+    <!--市民寿命区间-->
+    <!--45~70-->
+    <AgeRange>
+      <Lower>4050</Lower>
+      <Upper>6300</Upper>
+    </AgeRange>
+  </GameModeCitizenAgeRange>
+
+  <GameModeCitizenAgeRange>
+    <ID>2</ID>
+    <IconName>NewGame_InitCitizenAge_2</IconName>
+    <Score>0</Score>
+    <!--55~80-->
+    <AgeRange>
+      <Lower>4950</Lower>
+      <Upper>7200</Upper>
+    </AgeRange>               
+  </GameModeCitizenAgeRange>
+
+  <GameModeCitizenAgeRange>
+    <ID>3</ID>
+    <IconName>NewGame_InitCitizenAge_3</IconName>
+    <Score>0</Score>
+    <!--65~90-->
+    <AgeRange>
+      <Lower>5850</Lower>
+      <Upper>8100</Upper>
+    </AgeRange>
+  </GameModeCitizenAgeRange>
+
+</ArrayOfGameModeCitizenAgeRange>

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<ArrayOfGameModeEventTrigger xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--事件频率选项配置说明
+GameModeEventTrigger 单个选项配置内容
+  ID 选项id，唯一
+  IconName 选项文字描述
+  Score 该选项的难度分数
+  ActiveEventInterval主动事件间隔 天
+    Lower 下限
+    Upper 上限
+  PassiveEventInterval 被动事件cd 天
+  PassiveEventRate 被动事件概率 百分比
+  -->
+ 
+  <GameModeEventTrigger>
+    <!--选项id，唯一-->
+    <ID>1</ID>
+    <!--频繁-->
+    <!--选项文字描述-->
+    <IconName>NewGame_ActiveRandomEvent_1</IconName>
+    <!--选项难度评分-->
+    <Score>10</Score>
+    <!--主动事件间隔 天-->
+    <ActiveEventInterval>
+          <Lower>360</Lower>
+          <Upper>480</Upper>
+    </ActiveEventInterval>
+    <!--被动事件cd 天-->
+    <PassiveEventInterval>300</PassiveEventInterval>
+    <!--被动事件概率 百分比-->
+    <PassiveEventRate>50</PassiveEventRate>
+  </GameModeEventTrigger>
+
+  <GameModeEventTrigger>
+    <ID>2</ID>
+    <!--标准-->
+    <IconName>NewGame_ActiveRandomEvent_2</IconName>
+    <!--选项难度评分-->
+    <Score>50</Score>
+    <!--主动事件间隔 天-->
+    <ActiveEventInterval>
+          <Lower>600</Lower>
+          <Upper>720</Upper>
+    </ActiveEventInterval>
+    <!--被动事件cd 天-->
+    <PassiveEventInterval>450</PassiveEventInterval>
+    <!--被动事件概率 百分比-->
+    <PassiveEventRate>30</PassiveEventRate>
+  </GameModeEventTrigger>
+
+  <GameModeEventTrigger>
+    <ID>3</ID>
+    <!--偶尔-->
+    <IconName>NewGame_ActiveRandomEvent_3</IconName>
+    <!--选项难度评分-->
+    <Score>100</Score>
+    <!--主动事件间隔 天-->
+    <ActiveEventInterval>
+          <Lower>720</Lower>
+          <Upper>1080</Upper>
+    </ActiveEventInterval>
+    <!--被动事件cd 天-->
+    <PassiveEventInterval>600</PassiveEventInterval>
+    <!--被动事件概率 百分比-->
+    <PassiveEventRate>20</PassiveEventRate>
+  </GameModeEventTrigger>
+
+  <GameModeEventTrigger>
+    <ID>4</ID>
+    <!--罕见-->
+    <IconName>NewGame_ActiveRandomEvent_4</IconName>
+    <!--选项难度评分-->
+    <Score>200</Score>
+    <!--主动事件间隔 天-->
+    <ActiveEventInterval>
+          <Lower>2000</Lower>
+          <Upper>3000</Upper>
+    </ActiveEventInterval>
+    <!--被动事件cd 天-->
+    <PassiveEventInterval>3000</PassiveEventInterval>
+    <!--被动事件概率 百分比-->
+    <PassiveEventRate>5</PassiveEventRate>
+  </GameModeEventTrigger>
+
+  <GameModeEventTrigger>
+    <ID>5</ID>
+    <!--无 没有随机事件的模式专用-->
+    <IconName>NewGame_ActiveRandomEvent_5</IconName>
+    <!--选项难度评分-->
+    <Score>200</Score>
+    <!--主动事件间隔 天-->
+    <ActiveEventInterval>
+          <Lower>2000</Lower>
+          <Upper>3000</Upper>
+    </ActiveEventInterval>
+    <!--被动事件cd 天-->
+    <PassiveEventInterval>3000</PassiveEventInterval>
+    <!--被动事件概率 百分比-->
+    <PassiveEventRate>5</PassiveEventRate>
+  </GameModeEventTrigger>
+
+</ArrayOfGameModeEventTrigger>

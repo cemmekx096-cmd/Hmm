@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+<ArrayOfSeasonConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <!--  季节的配置说明
+Description of Season Configuration
+ID  int  ID不重复
+No Duplicates for IDs
+Name string 季节的名字
+Season
+Des string 季节描述
+Season Description
+Icon string 季节对应的图标（路径不需要对应多语言表）
+Season Icon (Path does not require the corresponding multi-language list)
+WeatherList  该季节对应的天气列表
+Weather list corresponding to the season
+Weather Param2Int 天气(int1对应weather表中的ID，int2对应的天气（权重）)
+Weather (int1 is for the ID in the weather list and int2 for the weather (weight))
+
+   
+   
+   
+   	备注：
+	Param2Int		自定义类型，双int类型
+		Int1		对应的weather中ID
+		Int2		对应的天气（权重）
+		
+	int			整型，只能填整数
+    string		字符串类型，字母或者文字
+	bool		布尔类型，true或者false
+	此配置表中所有string类型的需要对应多语言中的ID
+	
+	实例：
+	如下所示
+	
+   
+   --> 
+  
+  
+  <!--适宜模式温度-->
+  <SeasonConfig>
+    <ID>1</ID>
+    <Name>Season_Name_1</Name>
+	<Icon>icon_season_1</Icon>
+	<Des>Season_Des_1</Des>
+    <WeatherList>
+      <Weather>
+        <Int1>4</Int1>
+        <Int2>30</Int2>
+      </Weather>
+      <Weather>
+        <!--天气ID-->
+        <Int1>1</Int1>
+        <!--天气占比  0-100-->
+        <Int2>60</Int2>
+      </Weather>
+      <Weather>
+        <Int1>2</Int1>
+        <Int2>100</Int2>
+      </Weather>
+      <Weather>
+        <Int1>3</Int1>
+        <Int2>0</Int2>
+      </Weather>
+    </WeatherList>
+  </SeasonConfig>
+  <SeasonConfig>
+    <ID>2</ID>
+    <Name>Season_Name_2</Name>
+	<Icon>icon_season_1</Icon>
+	<Des>Season_Des_1</Des>
+    <WeatherList>
+      <Weather>
+        <Int1>4</Int1>
+        <Int2>25</Int2>
+      </Weather>
+      <Weather>
+        <!--天气ID-->
+        <Int1>1</Int1>
+        <!--天气占比  0-100-->
+        <Int2>50</Int2>
+      </Weather>
+      <Weather>
+        <Int1>2</Int1>
+        <Int2>100</Int2>
+      </Weather>
+      <Weather>
+        <Int1>3</Int1>
+        <Int2>0</Int2>
+      </Weather>
+    </WeatherList>
+  </SeasonConfig>
+  <SeasonConfig>
+    <ID>3</ID>
+    <Name>Season_Name_3</Name>
+	<Icon>icon_season_1</Icon>
+	<Des>Season_Des_1</Des>
+    <WeatherList>
+      <Weather>
+        <Int1>4</Int1>
+        <Int2>25</Int2>
+      </Weather>
+      <Weather>
+        <!--天气ID-->
+        <Int1>1</Int1>
+        <!--天气占比  0-100-->
+        <Int2>60</Int2>
+      </Weather>
+      <Weather>
+        <Int1>2</Int1>
+        <Int2>100</Int2>
+      </Weather>
+      <Weather>
+        <Int1>3</Int1>
+        <Int2>0</Int2>
+      </Weather>
+      <Weather>
+        <Int1>4</Int1>
+        <Int2>80</Int2>
+      </Weather>
+    </WeatherList>
+  </SeasonConfig>
+  <SeasonConfig>
+    <ID>4</ID>
+    <Name>Season_Name_4</Name>
+	<Icon>icon_season_2</Icon>
+	<Des>Season_Des_2</Des>
+    <WeatherList>
+      <Weather>
+        <Int1>4</Int1>
+        <Int2>25</Int2>
+      </Weather>
+      <Weather>
+        <!--天气ID-->
+        <Int1>1</Int1>
+        <!--天气占比  0-100-->
+        <Int2>40</Int2>
+      </Weather>
+      <Weather>
+        <Int1>2</Int1>
+        <Int2>100</Int2>
+      </Weather>
+      <Weather>
+        <Int1>3</Int1>
+        <Int2>0</Int2>
+      </Weather>
+    </WeatherList>
+  </SeasonConfig>
+  <SeasonConfig>
+    <ID>5</ID>
+    <Name>Season_Name_5</Name>
+	<Icon>icon_season_2</Icon>
+	<Des>Season_Des_2</Des>
+    <WeatherList>
+      <Weather>
+        <Int1>4</Int1>
+        <Int2>25</Int2>
+      </Weather>
+      <Weather>
+        <!--天气ID-->
+        <Int1>1</Int1>
+        <!--天气占比  0-100-->
+        <Int2>60</Int2>
+      </Weather>
+      <Weather>
+        <Int1>2</Int1>
+        <Int2>100</Int2>
+      </Weather>
+      <Weather>
+        <Int1>3</Int1>
+        <Int2>0</Int2>
+      </Weather>
+    </WeatherList>
+  </SeasonConfig>
+  <SeasonConfig>
+    <ID>6</ID>
+    <Name>Season_Name_6</Name>
+	<Icon>icon_season_2</Icon>
+	<Des>Season_Des_2</Des>
+    <WeatherList>
+      <Weather>
+        <Int1>4</Int1>
+        <Int2>20</Int2>
+      </Weather>
+      <Weather>
+        <!--天气ID-->
+        <Int1>1</Int1>
+        <!--天气占比  0-100-->
+        <Int2>70</Int2>
+      </Weather>
+      <Weather>
+        <Int1>2</Int1>
+        <Int2>100</Int2>
+      </Weather>
+      <Weather>
+        <Int1>3</Int1>
+        <Int2>0</Int2>
+      </Weather>
+    </WeatherList>
+  </SeasonConfig>
+  <SeasonConfig>
+    <ID>7</ID>
+    <Name>Season_Name_7</Name>
+	<Icon>icon_season_3</Icon>
+	<Des>Season_Des_3</Des>
+    <WeatherList>
+      <Weather>
+        <Int1>4</Int1>
+        <Int2>20</Int2>
+      </Weather>
+      <Weather>
+        <!--天气ID-->
+        <Int1>1</Int1>
+        <!--天气占比  0-100-->
+        <Int2>75</Int2>
+      </Weather>
+      <Weather>
+        <Int1>2</Int1>
+        <Int2>100</Int2>
+      </Weather>
+      <Weather>
+        <Int1>3</Int1>
+        <Int2>0</Int2>
+      </Weather>
+    </WeatherList>
+  </SeasonConfig>
+  <SeasonConfig>
+    <ID>8</ID>
+    <Name>Season_Name_8</Name>
+	<Icon>icon_season_3</Icon>
+	<Des>Season_Des_3</Des>
+    <WeatherList>
+      <Weather>
+        <Int1>4</Int1>
+        <Int2>25</Int2>
+      </Weather>
+      <Weather>
+        <!--天气ID-->
+        <Int1>1</Int1>
+        <!--天气占比  0-100-->
+        <Int2>70</Int2>
+      </Weather>
+      <Weather>
+        <Int1>2</Int1>
+        <Int2>100</Int2>
+      </Weather>
+      <Weather>
+        <Int1>3</Int1>
+        <Int2>0</Int2>
+      </Weather>
+    </WeatherList>
+  </SeasonConfig>
+  <SeasonConfig>
+    <ID>9</ID>
+    <Name>Season_Name_9</Name>
+	<Icon>icon_season_3</Icon>
+	<Des>Season_Des_3</Des>
+    <WeatherList>
+      <Weather>
+        <Int1>4</Int1>
+        <Int2>25</Int2>
+      </Weather>
+      <Weather>
+        <!--天气ID-->
+        <Int1>1</Int1>
+        <!--天气占比  0-100-->
+        <Int2>65</Int2>
+      </Weather>
+      <Weather>
+        <Int1>2</Int1>
+        <Int2>100</Int2>
+      </Weather>
+      <Weather>
+        <Int1>3</Int1>
+        <Int2>0</Int2>
+      </Weather>
+      <Weather>
+        <Int1>4</Int1>
+        <Int2>80</Int2>
+      </Weather>
+    </WeatherList>
+  </SeasonConfig>
+  <SeasonConfig>
+    <ID>10</ID>
+    <Name>Season_Name_10</Name>
+	<Icon>icon_season_4</Icon>
+	<Des>Season_Des_4</Des>
+    <WeatherList>
+      <Weather>
+        <Int1>4</Int1>
+        <Int2>25</Int2>
+      </Weather>
+      <Weather>
+        <!--天气ID-->
+        <Int1>1</Int1>
+        <!--天气占比  0-100-->
+        <Int2>60</Int2>
+      </Weather>
+      <Weather>
+        <Int1>2</Int1>
+        <Int2>100</Int2>
+      </Weather>
+      <Weather>
+        <Int1>3</Int1>
+        <Int2>0</Int2>
+      </Weather>
+    </WeatherList>
+  </SeasonConfig>
+  <SeasonConfig>
+    <ID>11</ID>
+    <Name>Season_Name_11</Name>
+	<Icon>icon_season_4</Icon>
+	<Des>Season_Des_4</Des>
+    <WeatherList>
+      <Weather>
+        <Int1>4</Int1>
+        <Int2>25</Int2>
+      </Weather>
+      <Weather>
+        <!--天气ID-->
+        <Int1>1</Int1>
+        <!--天气占比  0-100-->
+        <Int2>55</Int2>
+      </Weather>
+      <Weather>
+        <Int1>2</Int1>
+        <Int2>100</Int2>
+      </Weather>
+      <Weather>
+        <Int1>3</Int1>
+        <Int2>0</Int2>
+      </Weather>
+    </WeatherList>
+  </SeasonConfig>
+  <SeasonConfig>
+    <ID>12</ID>
+    <Name>Season_Name_12</Name>
+	<Icon>icon_season_4</Icon>
+	<Des>Season_Des_4</Des>
+    <WeatherList>
+      <Weather>
+        <Int1>4</Int1>
+        <Int2>25</Int2>
+      </Weather>
+      <Weather>
+        <!--天气ID-->
+        <Int1>1</Int1>
+        <!--天气占比  0-100-->
+        <Int2>50</Int2>
+      </Weather>
+      <Weather>
+        <Int1>2</Int1>
+        <Int2>100</Int2>
+      </Weather>
+      <Weather>
+        <Int1>3</Int1>
+        <Int2>0</Int2>
+      </Weather>
+    </WeatherList>
+  </SeasonConfig>
+</ArrayOfSeasonConfig>

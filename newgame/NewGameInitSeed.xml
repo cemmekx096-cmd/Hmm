@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<ArrayOfGameModeInitFreeSeed xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!--开局赠送种子选项配置说明
+GameModeInitFreeSeed 单个选项配置内容
+  ID 选项id，唯一
+  IconName 选项文字描述
+  Score 该选项的难度分数
+  FarmSeedNum 农田种子数
+  GardenSeedNum 果园种子数
+  -->
+
+<!--开局赠送种子-->
+  
+  <GameModeInitFreeSeed>
+    <!--选项id，唯一-->
+	<ID>1</ID>
+	<!--一种农田种子-->
+    <!--选项文字描述-->
+    <IconName>NewGame_InitSeed_1</IconName>
+    <!--难度评分-->
+	<Score>70</Score>
+	<!--农田种子数-->
+	<FarmSeedNum>1</FarmSeedNum>
+	<!--果园种子数-->
+	<GardenSeedNum>0</GardenSeedNum>
+  </GameModeInitFreeSeed>
+    
+  <GameModeInitFreeSeed>
+	<ID>2</ID>
+	<!--农田果园各一种种子-->
+    <IconName>NewGame_InitSeed_2</IconName>
+	<Score>50</Score>
+	<!--农田种子数-->
+	<FarmSeedNum>1</FarmSeedNum>
+	<!--果园种子数-->
+	<GardenSeedNum>1</GardenSeedNum>
+  </GameModeInitFreeSeed>
+    
+  <GameModeInitFreeSeed>
+	<ID>3</ID>
+	<!--农田果园各3种种子-->
+    <IconName>NewGame_InitSeed_3</IconName>
+	<Score>10</Score>
+	<!--农田种子数-->
+	<FarmSeedNum>3</FarmSeedNum>
+	<!--果园种子数-->
+	<GardenSeedNum>3</GardenSeedNum>
+  </GameModeInitFreeSeed>
+    
+  <GameModeInitFreeSeed>
+	<ID>4</ID>
+	<!--复活节岛专用-->
+    <IconName>NewGame_InitSeed_3</IconName>
+	<Score>10</Score>
+	<!--农田种子数-->
+	<FarmSeedNum>1</FarmSeedNum>
+	<!--果园种子数-->
+	<GardenSeedNum>0</GardenSeedNum>
+  </GameModeInitFreeSeed>
+  
+</ArrayOfGameModeInitFreeSeed>
