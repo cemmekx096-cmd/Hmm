@@ -1,0 +1,8 @@
+=== FILE DI ROOT ===
+
+1. QUICK_GUIDE.txt
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/QUICK_GUIDE.txt
+2. raw-links.txt
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/raw-links.txt
+3. generate-links.py
+https://raw.githubusercontent.com/cemmekx096-cmd/Hmm/main/generate-links.py

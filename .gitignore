@@ -1,0 +1,7 @@
+# Ignore script Python
+*.py
+
+# Atau spesifik file tertentu
+generate-links.py
+generate-structure.py
+generate-all.py
