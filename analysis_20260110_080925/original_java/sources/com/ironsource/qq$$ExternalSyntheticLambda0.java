@@ -1,0 +1,12 @@
+package com.ironsource;
+
+/* compiled from: D8$$SyntheticClass */
+/* loaded from: /data/data/com.termux/files/home/mod/ori/classes4.dex */
+public final /* synthetic */ class qq$$ExternalSyntheticLambda0 implements Runnable {
+    public final /* synthetic */ qq f$0;
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        qq.$r8$lambda$h-EV9jBoV2XETs5hW2GXs_4l5ig(this.f$0);
+    }
+}

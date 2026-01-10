@@ -1,0 +1,31 @@
+package com.google.android.gms.internal.measurement;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import com.crashlytics.android.BuildConfig;
+import com.google.common.base.Preconditions;
+
+/* compiled from: com.google.android.gms:play-services-measurement-impl@@22.4.0 */
+/* loaded from: /data/data/com.termux/files/home/mod/mod/classes4.dex */
+public final class zzci {
+    private static final ThreadLocal zza = new zzch();
+
+    public static SharedPreferences zza(Context context, String str, int i, zzcc zzccVar) {
+        zzbx.zza();
+        zzcg zzcgVar = str.equals(BuildConfig.FLAVOR) ? new zzcg() : null;
+        if (zzcgVar != null) {
+            return zzcgVar;
+        }
+        ThreadLocal threadLocal = zza;
+        Preconditions.checkArgument(((Boolean) threadLocal.get()).booleanValue());
+        threadLocal.set(Boolean.FALSE);
+        try {
+            SharedPreferences sharedPreferences = context.getSharedPreferences(str, 0);
+            threadLocal.set(Boolean.TRUE);
+            return sharedPreferences;
+        } catch (Throwable th) {
+            zza.set(Boolean.TRUE);
+            throw th;
+        }
+    }
+}

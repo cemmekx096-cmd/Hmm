@@ -1,0 +1,20 @@
+VIP/Premium Code Locations:
+===========================
+
+=== Searching: vip ===
+
+=== Searching: premium ===
+
+=== Searching: pro ===
+/data/data/com.termux/files/home/apk-modding/modmenu_analysis_20260110_075007/java_source/sources/bin/mt/signature/KillerApplication.java:68:            BufferedReader bufferedReader = new BufferedReader(new FileReader("/proc/self/maps"));
+
+=== Searching: subscription ===
+
+=== Searching: license ===
+
+=== Searching: unlock ===
+
+=== Searching: paid ===
+
+=== Searching: activate ===
+

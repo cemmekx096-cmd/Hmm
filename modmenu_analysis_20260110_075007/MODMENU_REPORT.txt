@@ -1,0 +1,58 @@
+╔══════════════════════════════════════════════════════════╗
+║          MOD MENU ANALYSIS REPORT (classes11.dex)        ║
+╚══════════════════════════════════════════════════════════╝
+
+Analysis Date: Sat Jan 10 07:50:10 WIB 2026
+Source: /data/data/com.termux/files/home/mod/mod/classes11.dex
+
+SUMMARY:
+========
+VIP/Premium mentions: 2
+Server/Network code: 5
+HMZ/Menu references: 10
+
+KEY FINDINGS:
+=============
+
+1. classes11.dex contains:
+   - Mod menu logic (Java/Kotlin)
+   - VIP verification system
+   - Server communication code
+   - Feature unlock mechanisms
+
+2. This works with:
+   - libHMZ.so (native mod menu UI)
+   - classes4.dex (modified game logic)
+   - libunity.so (patched Unity engine)
+
+3. VIP System:
+   - Checks are in Java layer (classes11.dex)
+   - Communicates with HMZ server
+   - Validates user status
+   - Unlocks premium features
+
+GENERATED FILES:
+================
+→ vip_code.txt       - All VIP/Premium code locations
+→ server_code.txt    - Server/network communication
+→ hmz_code.txt       - HMZ mod menu code
+→ methods.txt        - Interesting method names
+→ packages.txt       - Package structure
+→ smali_vip.txt      - Smali VIP methods (if available)
+→ BYPASS_GUIDE.txt   - Step-by-step bypass instructions
+
+NEXT STEPS:
+===========
+
+1. Review VIP code locations:
+   $ cat /data/data/com.termux/files/home/apk-modding/modmenu_analysis_20260110_075007/vip_code.txt
+
+2. Check smali methods:
+   $ cat /data/data/com.termux/files/home/apk-modding/modmenu_analysis_20260110_075007/smali_vip.txt
+
+3. Follow bypass guide:
+   $ cat /data/data/com.termux/files/home/apk-modding/modmenu_analysis_20260110_075007/BYPASS_GUIDE.txt
+
+4. Edit smali files and recompile
+
+All files saved to: /data/data/com.termux/files/home/apk-modding/modmenu_analysis_20260110_075007

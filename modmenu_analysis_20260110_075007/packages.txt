@@ -1,0 +1,12 @@
+Package Structure:
+==================
+
+/data/data/com.termux/files/home/apk-modding/modmenu_analysis_20260110_075007/java_source
+/data/data/com.termux/files/home/apk-modding/modmenu_analysis_20260110_075007/java_source/sources
+/data/data/com.termux/files/home/apk-modding/modmenu_analysis_20260110_075007/java_source/sources/org
+/data/data/com.termux/files/home/apk-modding/modmenu_analysis_20260110_075007/java_source/sources/org/lsposed
+/data/data/com.termux/files/home/apk-modding/modmenu_analysis_20260110_075007/java_source/sources/org/lsposed/hiddenapibypass
+/data/data/com.termux/files/home/apk-modding/modmenu_analysis_20260110_075007/java_source/sources/bin
+/data/data/com.termux/files/home/apk-modding/modmenu_analysis_20260110_075007/java_source/sources/bin/mt
+/data/data/com.termux/files/home/apk-modding/modmenu_analysis_20260110_075007/java_source/sources/bin/mt/signature
+/data/data/com.termux/files/home/apk-modding/modmenu_analysis_20260110_075007/java_source/resources
