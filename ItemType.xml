@@ -1,0 +1,557 @@
+<?xml version="1.0"?>
+<ArrayOfItemTypeConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--   物品类型的配置说明：  Description of Item Type Configuration:
+  字段      所属类型    描述     
+  ID        int          标签ID，物品类型定义，对应枚举表中  Label ID. Item type definition. Corresponding to
+  Name      string         类型名字  Type Name
+  LittleIcon    string         对应的物品类型图标（文件路径，不对应多语言）弃用  Corresponding Item Type Icon (Path of file does not corresponding to multiple languages) Deprecate
+  DefaultUpper  int         默认的生产上限  Default Production’s Upper Limit
+  WarnEnumId    int          左侧警示信息的枚举ID  Enumerated ID for warning message on the left
+  WarnNum     int          预警的数量  Number of Warnings
+  FirstType   int          是否一级类型（>= 1表示是）  Is it a first-level type (>= 1 means Yes)
+    TypeList               一级类型下的类型列表  List of types under First-level Type
+      Type      int         类型ID（ItemType的ID）  Type ID (ItemType's ID)
+     物品类型枚举：  Enumeration of Item Type:
+	ItemType_Unknow    		= 0;
+	ItemType_Edible				= 1;	// 食物
+	
+	ItemType_FoodLow			= 2;	// 低级
+	ItemType_FoodMiddle		= 3;	// 中级
+	ItemType_FoodHigh			= 4;	// 高级
+	
+	ItemType_LowFruit				= 201;		// 低级水果
+	ItemType_LowVegetable			= 202;		// 低级蔬菜
+	ItemType_LowMeat				= 203;		// 低级肉类
+
+	ItemType_Water				= 11;	// 水
+	ItemType_PrimaryDrink				= 111;	// 初级饮品
+	ItemType_MiddleDrink				= 112;	// 中级饮品
+	ItemType_PremiumDrinks				= 113;	// 高级饮品
+	
+	ItemType_Health				= 21;	//药品
+	ItemType_HealthCare		= 22;	//保健品
+	ItemType_Treatment		= 23;	//治疗药品
+
+	ItemType_Wood					= 31;	//木材（原料）
+	ItemType_Log					= 32;	//原木（木料）
+	ItemType_Timber				= 33;	//木料（食品原料）
+	ItemType_TextileMaterial= 34;	//纺织原料（纺织原料）
+	
+	ItemType_DrinkMaterial= 35;	//饮品原料（饮品原料）	
+	
+	ItemType_Ragstone			= 41;	//石材（建材）
+	
+	ItemType_Iron					= 51;	//铁矿（矿物）
+	
+	ItemType_Textile			= 61;	//纺织品（服装）
+	ItemType_Clothing			= 62;	//衣物
+	ItemType_Fabric				= 63;	//织物	
+	ItemType_Backpack			= 64;	//背包	
+	ItemType_Shoes				= 65;	//鞋子	
+	
+	ItemType_TreasuresMaterial	= 71;	//珍品原料（贸易）
+	
+	ItemType_CoalFuel			= 301;	//生活燃料（燃料）
+	ItemType_SmeltFuel		= 311;	//工业燃料（燃料）
+	
+	ItemType_Tool					= 511;	//工具
+	
+	ItemType_Luxury				= 801;	//奢侈品（饮品）
+	ItemType_Alcohol			= 802;	//酒精（初级饮品）
+	ItemType_HighEdible		= 803;	//高级食物（中级饮品）
+	ItemType_HighColthing	= 804;	//高级衣服（高级饮品）
+	
+	ItemType_Necessities	= 9;	//生活品（建筑消耗品）
+	ItemType_HospitalUse	= 901;	//医院用
+	ItemType_TheaterUse		= 902;	//剧院用
+	ItemType_BathhouseUse	= 903;	//澡堂用
+	ItemType_ChurchUse		= 904;	//教堂用
+	ItemType_ClinicUse		= 905;	//诊所用
+	
+	ItemType_Seed			= 1001;	//种子
+	ItemType_Livestock		= 1002;	//畜牧
+
+	ItemType_Coin			= 1101;	//金币
+	ItemType_TechPoint		= 1102;	//科技
+	ItemType_BuildingDrawing= 1103;	//工程图纸 蓝图
+	ItemType_ProvideHealth	= 1104;	//	提供建筑健康度
+	ItemType_ProvideHappy		= 1105;	//	提供建筑幸福度
+
+	
+	
+
+     实例：  Instance:
+     见下方  See below
+-->   
+
+  
+  
+  <ItemTypeConfig>
+    <ID>1</ID>
+    <Name>ItemType_Name_1</Name>
+	<!--主界面图片-->
+	<LittleIcon>Icon_item_306</LittleIcon>
+    <DefaultUpper>999999</DefaultUpper>
+    <WarnNum>100</WarnNum>
+    <!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>true</ShowStorage>
+    <!--此类型包含的物品类型id-->
+    <TypeList>
+      <Type>2</Type>
+      <Type>3</Type>
+      <Type>4</Type>
+    </TypeList>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>2</ID>
+    <Name>ItemType_Name_2</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>3</ID>
+    <Name>ItemType_Name_3</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>4</ID>
+    <Name>ItemType_Name_4</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+  
+    <ItemTypeConfig>
+    <ID>201</ID>
+    <Name>ItemType_Name_201</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+  <ItemTypeConfig>
+    <ID>202</ID>
+    <Name>ItemType_Name_202</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>  <ItemTypeConfig>
+    <ID>203</ID>
+    <Name>ItemType_Name_203</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>11</ID>
+    <Name>ItemType_Name_11</Name>
+	<!--主界面图片-->
+	<LittleIcon>Icon_item_1001</LittleIcon>
+    <DefaultUpper>999999</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+    <!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>true</ShowStorage>
+    </ItemTypeConfig>
+  
+  <ItemTypeConfig>
+    <ID>21</ID>
+    <Name>ItemType_Name_21</Name>
+	<!--左侧警示信息枚举ID-->
+	<WarnEnumId>17</WarnEnumId>
+	<!--主界面图片-->
+	<LittleIcon>Icon_item_2001</LittleIcon>
+    <DefaultUpper>999999</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+    <!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>false</ShowStorage>
+	<!--此类型包含的物品类型id-->
+    <TypeList>
+      <Type>22</Type>
+      <Type>23</Type>
+    </TypeList>
+  </ItemTypeConfig>
+  
+  <ItemTypeConfig>
+    <ID>22</ID>
+    <Name>ItemType_Name_22</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>23</ID>
+    <Name>ItemType_Name_23</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>31</ID>
+    <Name>ItemType_Name_31</Name>
+	<!--左侧警示信息枚举ID-->
+	<WarnEnumId>18</WarnEnumId>
+	<!--主界面图片-->
+	<LittleIcon>Icon_item_3001</LittleIcon>
+    <DefaultUpper>999999</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+    <!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>true</ShowStorage>
+		<!--此类型包含的物品类型id-->
+    <TypeList>
+      <Type>32</Type>
+      <Type>33</Type>
+	  <Type>34</Type>
+      <Type>35</Type>
+    </TypeList>
+  </ItemTypeConfig>
+ 
+  <ItemTypeConfig>
+    <ID>32</ID>
+    <Name>ItemType_Name_32</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+  
+  <ItemTypeConfig>
+    <ID>33</ID>
+   <Name>ItemType_Name_33</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+  
+    <ItemTypeConfig>
+    <ID>34</ID>
+   <Name>ItemType_Name_34</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+  
+    <ItemTypeConfig>
+    <ID>35</ID>
+   <Name>ItemType_Name_35</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>41</ID>
+    <Name>ItemType_Name_41</Name>
+	<!--左侧警示信息枚举ID-->
+	<WarnEnumId>19</WarnEnumId>
+    <DefaultUpper>999999</DefaultUpper>
+	<!--主界面图片-->
+	<LittleIcon>Icon_item_4001</LittleIcon>
+    <WarnNum>-1</WarnNum>
+    <!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>true</ShowStorage>
+  </ItemTypeConfig>
+  
+
+  <ItemTypeConfig>
+    <ID>51</ID>
+    <Name>ItemType_Name_51</Name>
+	<!--主界面图片-->
+	<LittleIcon>Icon_item_5001</LittleIcon>
+    <DefaultUpper>999999</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+    <!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>true</ShowStorage>
+  </ItemTypeConfig>
+  
+    <ItemTypeConfig>
+    <ID>301</ID>
+    <Name>ItemType_Name_301</Name>
+	<!--左侧警示信息枚举ID-->
+	<WarnEnumId>20</WarnEnumId>
+    <DefaultUpper>200</DefaultUpper>
+	<!--主界面图片-->
+	<LittleIcon>Icon_item_30001</LittleIcon>
+    <WarnNum>20</WarnNum>
+    <!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>true</ShowStorage>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>61</ID>
+    <Name>ItemType_Name_61</Name>
+    <DefaultUpper>999999</DefaultUpper>
+	<!--主界面图片-->
+	<LittleIcon>Icon_item_6001</LittleIcon>
+    <WarnNum>-1</WarnNum>
+    <!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>true</ShowStorage>
+	<!--此类型包含的物品类型id-->
+    <TypeList>
+      <Type>62</Type>
+      <Type>63</Type>
+	  <Type>64</Type>
+	  <Type>65</Type>
+    </TypeList>
+  </ItemTypeConfig>
+  
+   <ItemTypeConfig>
+    <ID>62</ID>
+   <Name>ItemType_Name_62</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+  
+     <ItemTypeConfig>
+    <ID>63</ID>
+   <Name>ItemType_Name_63</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+  
+  <ItemTypeConfig>
+    <ID>64</ID>
+   <Name>ItemType_Name_64</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+  
+   <ItemTypeConfig>
+    <ID>65</ID>
+   <Name>ItemType_Name_65</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+  
+
+  <ItemTypeConfig>
+    <ID>511</ID>
+    <Name>ItemType_Name_511</Name>
+	<!--主界面图片-->
+	<LittleIcon>Icon_item_51001</LittleIcon>
+    <DefaultUpper>100</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+    <!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>true</ShowStorage>
+  </ItemTypeConfig>
+  
+  
+  <ItemTypeConfig>
+    <ID>801</ID>
+    <Name>ItemType_Name_801</Name>
+	<!--主界面图片-->
+	<LittleIcon>Icon_item_80001</LittleIcon>
+    <DefaultUpper>200</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+    <!--此类型包含的物品类型id-->
+    <TypeList>
+      <Type>802</Type>
+      <Type>803</Type>
+      <Type>804</Type>
+    </TypeList>
+    <!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>false</ShowStorage>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>802</ID>
+    <Name>ItemType_Name_802</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>803</ID>
+    <Name>ItemType_Name_803</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>804</ID>
+    <Name>ItemType_Name_804</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+  
+  	<!--零食
+    <ItemTypeConfig>
+    <ID>805</ID>
+    <Name>ItemType_Name_805</Name>
+	主界面图片
+	<LittleIcon>Icon_item_506</LittleIcon>
+    <DefaultUpper>200</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+    在市政厅界面是否作为1级分类显示
+    <FirstType>1</FirstType>
+	是否在统计面板显示
+    <ShowStorage>true</ShowStorage>
+  </ItemTypeConfig>-->
+
+
+  <ItemTypeConfig>
+    <ID>71</ID>
+    <Name>ItemType_Name_71</Name>
+    <DefaultUpper>999999</DefaultUpper>
+	<!--主界面图片-->
+	<LittleIcon>Icon_item_7001</LittleIcon>
+    <WarnNum>-1</WarnNum>
+    <!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>true</ShowStorage>
+  </ItemTypeConfig>
+  
+    <ItemTypeConfig>
+    <ID>311</ID>
+    <Name>ItemType_Name_311</Name>
+	<!--左侧警示信息枚举ID-->
+	<WarnEnumId>-1</WarnEnumId>
+    <DefaultUpper>200</DefaultUpper>
+	<!--主界面图片-->
+	<LittleIcon>Icon_item_31001</LittleIcon>
+    <WarnNum>-1</WarnNum>
+    <!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>true</ShowStorage>
+  </ItemTypeConfig>
+  
+  	<!--生活品-->
+    <ItemTypeConfig>
+    <ID>9</ID>
+    <Name>ItemType_Name_9</Name>
+	<!--主界面图片-->
+	<LittleIcon>Icon_item_2001</LittleIcon>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+    <!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>false</ShowStorage>
+	</ItemTypeConfig>
+	
+	  <ItemTypeConfig>
+    <ID>901</ID>
+    <Name>ItemType_Name_901</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>902</ID>
+    <Name>ItemType_Name_902</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>903</ID>
+    <Name>ItemType_Name_903</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+  
+    <ItemTypeConfig>
+    <ID>904</ID>
+    <Name>ItemType_Name_904</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+  
+    <ItemTypeConfig>
+    <ID>905</ID>
+    <Name>ItemType_Name_905</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>1001</ID>
+    <Name>ItemType_Name_1001</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+	<!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>false</ShowStorage>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>1002</ID>
+    <Name>ItemType_Name_1002</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+	<!--在市政厅界面是否作为1级分类显示-->
+    <FirstType>1</FirstType>
+	<!--是否在统计面板显示-->
+    <ShowStorage>false</ShowStorage>
+  </ItemTypeConfig>
+
+
+  <ItemTypeConfig>
+    <ID>1101</ID>
+    <Name>ItemType_Name_1101</Name>
+    <Icon>Icon_silver</Icon>
+	<!--主界面图片-->
+	<LittleIcon>Icon_Type_9</LittleIcon>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+	<!--是否在统计面板显示-->
+    <ShowStorage>false</ShowStorage>
+  </ItemTypeConfig>
+
+  <ItemTypeConfig>
+    <ID>1102</ID>
+    <Name>ItemType_Name_1102</Name>
+    <Icon>Icon_item_110201</Icon>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+	<!--是否在统计面板显示-->
+    <ShowStorage>false</ShowStorage>
+  </ItemTypeConfig>
+  
+    <ItemTypeConfig>
+    <ID>1103</ID>
+    <Name>ItemType_Name_1103</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+	<!--是否在统计面板显示-->
+    <ShowStorage>false</ShowStorage>
+  </ItemTypeConfig>
+  
+      <ItemTypeConfig>
+    <ID>1104</ID>
+    <Name>ItemType_Name_1104</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+	<!--是否在统计面板显示-->
+    <ShowStorage>false</ShowStorage>
+  </ItemTypeConfig>
+  
+      <ItemTypeConfig>
+    <ID>1105</ID>
+    <Name>ItemType_Name_1105</Name>
+    <DefaultUpper>-1</DefaultUpper>
+    <WarnNum>-1</WarnNum>
+	<!--是否在统计面板显示-->
+    <ShowStorage>false</ShowStorage>
+  </ItemTypeConfig>
+  
+
+
+</ArrayOfItemTypeConfig>
