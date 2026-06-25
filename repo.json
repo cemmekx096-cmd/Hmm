@@ -1,0 +1,9 @@
+{
+    "name": "cok",
+    "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/RepoIcon.png",
+    "description": "cok",
+    "manifestVersion": 1,
+    "pluginLists": [
+      "https://raw.githubusercontent.com/hexated/cloudstream-extensions-hexated/refs/heads/builds/plugins.json"
+    ]
+}
